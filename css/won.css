@@ -19,8 +19,32 @@ html {
   object-fit: cover;
 }
 
-/* style */
+/* component && lib */
+.tag {
+  font-weight: 700;
+  font-size: var(--Heading-S);
+  color: var(--MainOrange);
+}
 
+.heading-gradient {
+  font-weight: var(--Heading);
+  font-size: var(--Heading-L);
+  line-height: 1.3;
+  background: linear-gradient(to right, var(--Mono-15), var(--Mono-40));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.body {
+  font-weight: var(--Body);
+  font-size: var(--Body-L);
+  line-height: 1.8;
+  color: var(--Mono-30);
+}
+
+/* style */
+/* -------------------------------------- sec hero -------------------------------------- */
 @keyframes marquee {
   0% {
     transform: translateX(0%);
@@ -106,6 +130,24 @@ html {
 
     .marquee-wrapper {
       animation: marquee 16s infinite linear;
+    }
+  }
+}
+/* -------------------------------------- sec overview -------------------------------------- */
+.sec-overview {
+  display: flex;
+  align-items: center;
+  min-height: 100lvh;
+  background-color: var(--Mono-100);
+
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+
+    strong {
+      color: var(Mono-2);
     }
   }
 }
