@@ -69,6 +69,14 @@ body {
     transform: translateX(-100%);
   }
 }
+@keyframes hovering {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(2rem);
+  }
+}
 .sec-hero {
   position: relative;
   overflow-x: hidden;
@@ -88,6 +96,7 @@ body {
     position: absolute;
     top: 38.4rem;
     left: -25rem;
+    animation: hovering 2s infinite cubic-bezier(0.42, 0, 0.18, 0.98) alternate;
 
     > img {
       width: 242rem;

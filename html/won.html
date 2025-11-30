@@ -8,6 +8,8 @@
     <!-- font -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- css -->
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/variable.css" />
@@ -19,7 +21,7 @@
     <section class="sec-hero">
       <h1 style="display: none">EATGO Process Page</h1>
       <div class="svg-box">
-        <svg width="51.6rem" height="auto" viewBox="0 0 516 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg data-aos="zoom-in" data-aos-duration="600" width="51.6rem" viewBox="0 0 516 250" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_1042_4569)">
             <path d="M386.323 121.993V187.761H516.001V250H266.605V187.761H319.966V121.993H386.323Z" fill="#FCFAF9" />
             <path
@@ -42,7 +44,7 @@
             </clipPath>
           </defs>
         </svg>
-        <svg width="51.6rem" height="auto" viewBox="0 0 516 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600" width="51.6rem" viewBox="0 0 516 103" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M88.1517 33.2743H37.9461V40.2796H86.9842V63.6308H37.9461V70.6361H88.7355V101.576H0V3.50161H88.1517V33.2743Z" fill="#FCFAF9" />
           <path d="M176.281 3.50161L205.47 101.576H164.605L161.336 87.5657H135.182L131.913 101.576H91.0478L120.237 3.50161H176.281ZM141.72 59.5443H154.797L148.259 31.6397L141.72 59.5443Z" fill="#FCFAF9" />
           <path d="M265.075 101.576H225.378V38.5283H197.356V3.50161H293.097V38.5283H265.075V101.576Z" fill="#FCFAF9" />
@@ -84,12 +86,12 @@
     <section class="sec-overview">
       <div class="content-wrap">
         <div class="text-box">
-          <h4 class="tag">Overview</h4>
-          <h2 class="hg">
+          <h4 class="tag" data-gsap="fade">Overview</h4>
+          <h2 class="hg" data-gsap="fade">
             매번 식사할 때마다 직접 입력하거나 사진을 찍어야 하는 기록 방식,<br />
             솔직히 너무 번거롭지 않나요?
           </h2>
-          <p class="body">
+          <p class="body" data-gsap="fade">
             대부분의 식단 앱들이 이런 <strong>기록 피로도</strong>를 해결하지 못하고 있어요.<br />
             일상의 흐름을 끊어버리는 수동 기록 방식 때문에 금방 지쳐버리기 쉬운 게 현실이에요.
           </p>
@@ -100,29 +102,29 @@
       <div class="content-wrap">
         <div class="box-1">
           <div class="text-box">
-            <h4 class="tag">Background</h4>
-            <h2 class="hg">
+            <h4 class="tag" data-gsap="fade">Background</h4>
+            <h2 class="hg" data-gsap="fade">
               건강 관리의 위기! <br />
               비만율이 매년 가파르게 상승하고 있어요
             </h2>
-            <p class="body">디지털 환경 변화로 인한 활동량 감소가 가속화되며 비만 인구가 꾸준히 증가하고 있어요</p>
+            <p class="body" data-gsap="fade">디지털 환경 변화로 인한 활동량 감소가 가속화되며 비만 인구가 꾸준히 증가하고 있어요</p>
           </div>
           <div class="card-box">
-            <div class="card card-1">
+            <div class="card card-1" data-gsap="fadeUp" data-hover="up" data-delay="000">
               <div class="inner">
                 <h3>최근 신경 쓰고 있는 건강 문제</h3>
                 <div class="graph-box">
                   <div class="graph-1">
                     <div class="name">체중관리</div>
-                    <div class="bar">66%</div>
+                    <div class="bar"><span data-gsap="counter" data-target="66"></span>%</div>
                   </div>
                   <div class="graph-2">
                     <div class="name">체력 증진</div>
-                    <div class="bar">50%</div>
+                    <div class="bar"><span data-gsap="counter" data-target="50"></span>%</div>
                   </div>
                   <div class="graph-3">
                     <div class="name">식습관</div>
-                    <div class="bar">41%</div>
+                    <div class="bar"><span data-gsap="counter" data-target="41"></span>%</div>
                   </div>
                 </div>
                 <div class="text-box">
@@ -132,20 +134,20 @@
               </div>
               <span class="source">출처: 오픈서베이 건강 관리 트렌드 리포트 2025</span>
             </div>
-            <div class="card card-2">
+            <div class="card card-2" data-gsap="fadeUp" data-hover="up" data-delay="200">
               <div class="inner">
                 <h3>성인 비만율 추이</h3>
                 <div class="graph-box">
                   <div class="graph-1 bar-chart">
                     <span>2013년</span>
                     <div class="bar">
-                      <div class="bar-inner">33%</div>
+                      <div class="bar-inner" data-gsap="slideLeft">33%</div>
                     </div>
                   </div>
                   <div class="graph-2 bar-chart">
                     <span>2023년</span>
                     <div class="bar">
-                      <div class="bar-inner">47%</div>
+                      <div class="bar-inner" data-gsap="slideLeft">47%</div>
                     </div>
                   </div>
                 </div>
@@ -162,7 +164,7 @@
               </div>
               <span class="source">출처: 질병관리청(KDCA) 국민건강영양조사</span>
             </div>
-            <div class="card card-3">
+            <div class="card card-3" data-gsap="fadeUp" data-hover="up" data-delay="400">
               <div class="inner">
                 <h3>국내 성인 비만율 40% 육박</h3>
                 <h5>국내 성인 비만율이 40%에 육박하며, 특히 남성 2명 중 1명은 비만인 것으로 나타났어요</h5>
@@ -175,9 +177,9 @@
 
         <div class="box-2">
           <div class="text-box">
-            <h4 class="tag">
+            <h4 class="tag" data-gsap="fade">
               <div class="svg-box">
-                <svg width="3.2rem" height="auto" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="3.2rem" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_1062_17856)">
                     <path
                       d="M72.0013 38.667C55.1013 38.667 41.3346 24.9003 41.3346 8.00033C41.3346 7.26699 40.7346 6.66699 40.0013 6.66699C39.268 6.66699 38.668 7.26699 38.668 8.00033C38.668 24.9003 24.9013 38.667 8.0013 38.667C7.26797 38.667 6.66797 39.267 6.66797 40.0003C6.66797 40.7337 7.26797 41.3337 8.0013 41.3337C24.9013 41.3337 38.668 55.1003 38.668 72.0003C38.668 72.7337 39.268 73.3337 40.0013 73.3337C40.7346 73.3337 41.3346 72.7337 41.3346 72.0003C41.3346 55.1003 55.1013 41.3337 72.0013 41.3337C72.7346 41.3337 73.3346 40.7337 73.3346 40.0003C73.3346 39.267 72.7346 38.667 72.0013 38.667Z"
@@ -192,42 +194,42 @@
                 </svg>
               </div>
             </h4>
-            <h2 class="hg">
+            <h2 class="hg" data-gsap="fade">
               디지털 헬스케어시장과 다이어트, 영양 앱 시장<br />
               모두 큰 폭의 성장세를 보이고 있어요
             </h2>
-            <p class="body">고도화된 비만 문제와 만성 질환의 위협 속에서, 개인들은 더욱 편리하고 정밀한 건강 솔루션을 찾고 있어요</p>
+            <p class="body" data-gsap="fade">고도화된 비만 문제와 만성 질환의 위협 속에서, 개인들은 더욱 편리하고 정밀한 건강 솔루션을 찾고 있어요</p>
           </div>
 
           <div class="card-box">
-            <div class="card card-1">
+            <div class="card card-1" data-gsap="fadeUp" data-delay="0" data-hover="up">
               <div class="inner">
                 <h5>글로벌 영양 앱 시장 성장률</h5>
-                <div class="middle"><span class="count-numb">21%</span><span class="years">연간</span></div>
+                <div class="middle"><span class="count-numb" data-gsap="counter" data-target="21"></span>%<span class="years">연간</span></div>
                 <p>2029년 약 40조 원 규모 전망</p>
               </div>
               <span class="source">출처: Mordor Intelligence, GII Korea</span>
             </div>
-            <div class="card card-2">
+            <div class="card card-2" data-gsap="fadeUp" data-delay="200" data-hover="up">
               <div class="inner">
                 <h5>국내 헬스케어 성장률</h5>
-                <div class="middle"><span class="count-numb">15%</span><span class="years">연간</span></div>
+                <div class="middle"><span class="count-numb" data-gsap="counter" data-target="15"></span>%<span class="years">연간</span></div>
                 <p>데이터 기반 맞춤형 관리 수요 급증</p>
               </div>
               <span class="source">출처:삼일회계법인 PwC,한국바이오협회</span>
             </div>
-            <div class="card card-3">
+            <div class="card card-3" data-gsap="fadeUp" data-delay="400" data-hover="up">
               <div class="inner">
                 <h5>마이데이터 가입</h5>
-                <div class="middle"><span class="count-numb">1.1</span><span>억명</span></div>
+                <div class="middle"><span class="count-numb" data-gsap="counter" data-target="1.1"></span><span>억명</span></div>
                 <p>국내 가입자 수 (중복 포함)</p>
               </div>
               <span class="source">출처:금융위원회</span>
             </div>
-            <div class="card card-4">
+            <div class="card card-4" data-gsap="fadeUp" data-delay="600" data-hover="up">
               <div class="inner">
                 <h5>잠재 시장 규모</h5>
-                <div class="middle"><span class="count-numb">2,400</span><span></span></div>
+                <div class="middle"><span class="count-numb" data-gsap="counter" data-target="2400"></span><span>조 원</span></div>
                 <p>2033년 글로벌 디지털 헬스케어</p>
               </div>
               <span class="source">출처:한국 바이오협회</span>
@@ -236,5 +238,118 @@
         </div>
       </div>
     </section>
+
+    <!-- aos animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <!-- gsap svg -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"></script>
+    <!-- gsap scrollsmoother -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+      AOS.init();
+
+      const gsapAni__init = () => {
+        const AniTarget = document.querySelectorAll(`
+    [data-gsap="fade"],
+    [data-gsap="popin"],
+    [data-gsap="slideLeft"],
+    [data-gsap="counter"],
+    [data-gsap="fadeUp"]`);
+
+        if (AniTarget.length === 0) return;
+        hoverAni();
+        const Duration = 600;
+
+        AniTarget.forEach((el) => {
+          const AniName = el.getAttribute("data-gsap");
+          const delay = Number(el.dataset.delay) || 0;
+
+          gsap.set(el, { transformOrigin: "50% 50%" });
+
+          if (AniName === "popin") {
+            gsapAni__popIn(el, Duration, delay);
+          } else if (AniName === "fade") {
+            gsapAni__fade(el, Duration, delay);
+          } else if (AniName === "slideLeft") {
+            gsapAni__slideLeft(el, Duration, delay);
+          } else if (AniName === "fadeUp") {
+            gsapAni__fadeUp(el, Duration, delay);
+          } else if (AniName === "counter") {
+            gsapAni__counter(el, Duration, delay);
+          }
+        });
+      };
+
+      const gsapAni__popIn = (target, duration, delay) => {
+        const tl = gsap.timeline();
+        tl.from(target, { delay: delay / 1000 });
+        tl.from(target, { scale: 0.75, opacity: 0, duration: duration / 1000, ease: "none" });
+        gaspAni__createST(target, tl, 1);
+      };
+
+      const gsapAni__fadeUp = (target, duration, delay) => {
+        const tl = gsap.timeline();
+        tl.from(target, { delay: delay / 1000 });
+        tl.from(target, { y: 100, opacity: 0, duration: duration / 1000, ease: "power1.out" });
+        gaspAni__createST(target, tl, false);
+      };
+
+      const gsapAni__fade = (target, duration, delay) => {
+        const tl = gsap.timeline();
+        tl.from(target, { delay: delay / 1000 });
+        tl.from(target, { opacity: 0, duration: duration / 1000, ease: "none" });
+        gaspAni__createST(target, tl, 1);
+      };
+
+      const gsapAni__slideLeft = (target, duration, delay) => {
+        const tl = gsap.timeline();
+        tl.from(target, { delay: delay / 1000 });
+        tl.from(target, { opacity: 0, x: "-25%", duration: duration / 1000, ease: "none" });
+        gaspAni__createST(target, tl, 1);
+      };
+
+      const gsapAni__counter = (target, duration, delay) => {
+        let targetNum = parseFloat(target.getAttribute("data-target"));
+
+        console.log(target);
+        const tl = gsap.timeline();
+        tl.from(target, { delay: delay / 1000 });
+        tl.to(target, {
+          innerHTML: targetNum,
+          duration: (duration * 3) / 1000,
+          snap: { innerHTML: 0.1 },
+          ease: "none",
+        });
+        gaspAni__createST(target, tl, false);
+      };
+
+      const gaspAni__createST = (targetEl, timeline, scrub) => {
+        const st = ScrollTrigger.create({
+          trigger: targetEl,
+          animation: timeline,
+          scrub: scrub,
+          start: "top bottom",
+          end: "bottom +=75%",
+          toggleActions: "play none none reverse",
+        });
+      };
+      function hoverAni() {
+        const targetAll = document.querySelectorAll(`[data-hover="up"]`);
+        targetAll.forEach((el) => {
+          el.addEventListener("pointerenter", () => {
+            gsap.to(el, { y: -10, duration: 0.3, ease: "power1.out" });
+          });
+          el.addEventListener("pointerleave", () => {
+            gsap.to(el, { y: 10, duration: 0.3, ease: "power1.out" });
+          });
+        });
+      }
+
+      gsapAni__init();
+    </script>
   </body>
 </html>
