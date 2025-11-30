@@ -1,3 +1,617 @@
-body {
-    background-color: black;
+/* flatter ------------------------------------ */
+html {
+  font-size: 10px;
+}
+
+html body {
+  font-family: "Pretendard";
+  overflow-x: hidden;
+}
+/* main ------------------------------------ */
+main {
+  width: 100%;
+  height: 100%;
+}
+
+/* sec-positioning ------------------------------------ */
+.sec-positioning {
+  width: 100dvw;
+  height: 100%;
+  padding: 8rem 0;
+  box-sizing: border-box;
+  background-color: var(--Mono-100);
+  cursor: default;
+}
+
+.sec-positioning > .positioning-container {
+  width: 100%;
+  max-width: var(--maxWidth);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  box-sizing: border-box;
+  padding: 0 1.2rem;
+}
+/* left-box ------------------------------------ */
+.sec-positioning > .positioning-container > .left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  gap: 1.6rem;
+  white-space: nowrap;
+  flex: 1 0 0;
+}
+/* left-box > category-box ------------------------------------ */
+.sec-positioning > .positioning-container > .left-box > .category-box {
+  display: block;
+  color: var(--Mono-100);
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+  background-color: var(--MainOrange);
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.8rem;
+  cursor: default;
+}
+/* left-box > text-box ------------------------------------ */
+.sec-positioning > .positioning-container > .left-box > .text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.sec-positioning > .positioning-container > .left-box > .text-box > h3 {
+  color: var(--Mono-22);
+  font-size: var(--Heading-M);
+  font-weight: var(--subHeading);
+}
+
+
+.sec-positioning > .positioning-container > .left-box > .text-box > .paragraph-wrapper {
+  display: block;
+}
+
+.sec-positioning > .positioning-container > .left-box > .text-box > .paragraph-wrapper > p {
+  color: var(--Mono-30);
+  font-size: var(--subHeading-M);
+  font-weight: var(--Body);
+  line-height: 180%;
+}
+/* left-box > contents-box ------------------------------------ */
+.sec-positioning > .positioning-container > .left-box > .contents-box {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 2.4rem 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.6rem;
+}
+
+.sec-positioning > .positioning-container > .left-box > .contents-box > .contents-exp-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.sec-positioning > .positioning-container > .left-box > .contents-box > .contents-exp-wrapper > .contents-titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sec-positioning > .positioning-container > .left-box > .contents-box > .contents-exp-wrapper > .contents-titles > .img-box {
+  width: 2.4rem;
+  height: 2.4rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sec-positioning > .positioning-container > .left-box > .contents-box > .contents-exp-wrapper > .contents-titles > .img-box > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec-positioning > .positioning-container > .left-box > .contents-box > .contents-exp-wrapper > .contents-titles > h6 {
+  color: var(--Mono-15);
+  font-weight: var(--subHeading);
+  font-size: var(--subHeading-M);
+}
+
+.sec-positioning > .positioning-container > .left-box > .contents-box > .contents-exp-wrapper > .brief {
+  color: var(--Mono-30);
+  font-weight: var(--Body);
+  font-size: var(--Body-M);
+}
+/* right-box ------------------------------------ */
+.sec-positioning > .positioning-container > .right-box {
+  position: relative;
+  flex: 1.5 0 0;
+  min-width: 96rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sec-positioning > .positioning-container > .right-box > .img-box {
+  width: 73rem;
+  height: 73rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.sec-positioning > .positioning-container > .right-box > .img-box > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/* right-box > graph-axis ------------------------------------ */
+.sec-positioning > .positioning-container > .right-box > .graph-axis-X {
+  position: absolute;
+  top: 0;
+  transform: translateY(2750%);
+  width: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.sec-positioning > .positioning-container > .right-box > .graph-axis-Y {
+  position: absolute;
+  left: 0;
+  transform: translate(30%, 1.5%);
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+/* right-box > graph-inside-logos ------------------------------------ */
+.sec-positioning > .positioning-container > .right-box .graph-inside-logo {
+  position: absolute;
+  width: 10rem;
+  height: 10rem; 
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: var(--Mono-100);
+  filter: saturate(0);
+  transition: all 0.2s ease-in-out;
+}
+
+.sec-positioning > .positioning-container > .right-box .graph-inside-logo:hover {
+  filter: saturate(1);
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.sec-positioning > .positioning-container > .right-box .graph-inside-logo img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec-positioning > .positioning-container > .right-box > .logo-1 {
+  top: 0;
+  left: 0;
+  translate: 150% 25%;
+}
+
+.sec-positioning > .positioning-container > .right-box > .logo-2 {
+  top: 0;
+  left: 0;
+  translate: 350% 250%;
+}
+
+.sec-positioning > .positioning-container > .right-box > .logo-3 {
+  top: 0;
+  left: 0;
+  translate: 225% 250%;
+}
+
+.sec-positioning > .positioning-container > .right-box > .logo-4 {
+  top: 0;
+  left: 0;
+  translate: 350% 125%;
+}
+
+.sec-positioning > .positioning-container > .right-box > .logo-5 {
+  top: 0;
+  left: 0;
+  translate: 150% 600%;
+}
+
+.sec-positioning > .positioning-container > .right-box > .logo-6 {
+  top: 0;
+  left: 0;
+  translate: 510% 390%;
+}
+
+.sec-positioning > .positioning-container > .right-box > .logo-7 {
+  width: 15.5rem;
+  height: 15.5rem; 
+  top: 0;
+  left: 0;
+  translate: 500% 185%;
+  filter: saturate(1);
+}
+/* sec-flowChart ------------------------------------ */
+.sec-flowChart {
+  width: 100dvw;
+  height: 100%;
+  padding: 10rem 0;
+  box-sizing: border-box;
+  background-color: var(--Mono-100);
+  cursor: default;
+}
+
+.sec-flowChart > .flowChart-container {
+  width: 100%;
+  max-width: var(--maxWidth);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  box-sizing: border-box;
+  padding: 0 1.2rem;
+}
+/* flowChart > top-box ------------------------------------ */
+.sec-flowChart > .flowChart-container > .top-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 8rem;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.sec-flowChart > .flowChart-container > .top-box > .category-box {
+  display: block;
+  color: var(--Mono-100);
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+  background-color: var(--MainOrange);
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.8rem;
+  cursor: default;
+}
+
+.sec-flowChart > .flowChart-container > .top-box > h3 {
+  color: var(--Mono-22);
+  font-size: var(--Heading-M);
+  font-weight: var(--Heading);
+}
+
+.sec-flowChart > .flowChart-container > .top-box > span {
+  color: var(--Mono-30);
+  font-size: var(--Body-L);
+  font-weight: var(--Body);
+}
+/* flowChart > bottom-box ------------------------------------ */
+.sec-flowChart > .flowChart-container > .bottom-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-flowChart > .flowChart-container > .bottom-box > .img-box {
+  width: 158.8rem;
+  height: 163.3rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sec-flowChart > .flowChart-container > .bottom-box > .img-box > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/* sec-design ------------------------------------ */
+.sec-design {
+  width: 100dvw;
+  height: 100%;
+  padding: 12rem 0;
+  box-sizing: border-box;
+  background-color: var(--Mono-100);
+  cursor: default;
+  white-space: nowrap;
+}
+
+.sec-design > .design-container {
+  width: 100%;
+  max-width: var(--maxWidth);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  box-sizing: border-box;
+  padding: 0 1.2rem;
+}
+
+.sec-design > .design-container > .title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.sec-design > .design-container > .title-box > .img-container {
+  width: 2.4rem;
+  height: 2.4rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sec-design > .design-container > .title-box > .img-container > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec-design > .design-container > .title-box > span {
+  color: var(--MainOrange);
+  font-size: calc(var(--Heading-L) - 0.2rem);
+  font-weight: var(--BodyStrong);
+}
+
+.sec-design > .design-container > h3 {
+  text-align: center;
+  background: linear-gradient(to right, var(--Mono-15), var(--Mono-60));
+  background-clip: text;
+  color: transparent;
+  font-weight: var(--Heading);
+  font-size: var(--Heading-L);
+  line-height: 130%;
+}
+
+.sec-design > .design-container > span {
+  color: var(--Mono-30);
+  font-weight: var(--Body);
+  font-size: var(--Body-L);
+}
+/* sec-logoType ------------------------------------ */
+.sec-logoType {
+  width: 100dvw;
+  height: 100%;
+  padding-top: 12.4rem;
+  padding-bottom: 17.6rem;
+  box-sizing: border-box;
+  background-color: var(--Mono-100);
+  cursor: default;
+  white-space: nowrap;
+}
+
+.sec-logoType > .logoType-container {
+  width: 100%;
+  max-width: var(--maxWidth);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  box-sizing: border-box;
+  padding: 0 1.2rem;
+}
+/* logoType > left-box ------------------------------------ */
+.sec-logoType > .logoType-container > .left-box {
+  flex: 2 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sec-logoType > .logoType-container > .left-box > .title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sec-logoType > .logoType-container > .left-box > .title-box > .img-container {
+  width: 2.4rem;
+  height: 2.4rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sec-logoType > .logoType-container > .left-box > .title-box > .img-container > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec-logoType > .logoType-container > .left-box > .title-box > span {
+  color: var(--MainOrange);
+  font-size: calc(var(--Heading-L) - 0.2rem);
+  font-weight: var(--BodyStrong);
+}
+
+.sec-logoType > .logoType-container > .left-box > h3 {
+  color: var(--Mono-22);
+  font-size: var(--Heading-M);
+  font-weight: var(--Heading);
+}
+
+
+.sec-logoType > .logoType-container > .left-box > .paragraph-wrapper {
+  text-align: center;
+  color: var(--Mono-22);
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+  line-height: 180%;
+}
+/* logoType > right-box ------------------------------------ */
+.sec-logoType > .logoType-container > .right-box {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sec-logoType > .logoType-container > .right-box > .logo-kr {
+  width: 25rem;
+  height: 12rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sec-logoType > .logoType-container > .right-box > .logo-en {
+  width: 45rem;
+  height: 9rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sec-logoType > .logoType-container > .right-box .eatgo-logo-container img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/* sec-appIcon ------------------------------------ */
+.sec-appIcon {
+  width: 100dvw;
+  height: 100%;
+  padding-top: 5rem;
+  padding-bottom: 12rem;
+  box-sizing: border-box;
+  background-color: var(--Mono-100);
+  cursor: default;
+  white-space: nowrap;
+}
+
+.sec-appIcon > .appIcon-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4.8rem;
+  box-sizing: border-box;
+  padding: 0 0 0 1.2rem;
+}
+
+.sec-appIcon > .appIcon-container > .left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sec-appIcon > .appIcon-container > .left-box > .title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sec-appIcon > .appIcon-container > .left-box > .title-box > .img-container {
+  width: 2.4rem;
+  height: 2.4rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sec-appIcon > .appIcon-container > .left-box > .title-box > .img-container > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec-appIcon > .appIcon-container > .left-box > .title-box > span {
+  color: var(--MainOrange);
+  font-size: calc(var(--Heading-L) - 0.2rem);
+  font-weight: var(--BodyStrong);
+}
+
+.sec-appIcon > .appIcon-container > .left-box > h3 {
+  color: var(--Mono-22);
+  font-size: var(--Heading-M);
+  font-weight: var(--Heading);
+}
+
+
+.sec-appIcon > .appIcon-container > .left-box > .paragraph-wrapper {
+  text-align: center;
+  color: var(--Mono-22);
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+  line-height: 180%;
+}
+
+.sec-appIcon > .appIcon-container > .right-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-appIcon > .appIcon-container > .right-box > .img-container {
+  width: 56.7rem;
+  height: 57.4rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sec-appIcon > .appIcon-container > .right-box > .img-container > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/* sec-variableSystems ------------------------------------ */
+.sec-variableSystems {
+  width: 100dvw;
+  height: 100%;
+  padding-top: 12.4rem;
+  padding-bottom: 17.6rem;
+  box-sizing: border-box;
+  background-color: var(--Mono-100);
+  cursor: default;
+  white-space: nowrap;
+}
+
+.sec-variableSystems > .variableSystems-container {
+  width: 100%;
+  max-width: var(--maxWidth);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  box-sizing: border-box;
+  padding: 0 1.2rem;
 }
