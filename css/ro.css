@@ -1,0 +1,134 @@
+html {
+  font-size: max(0.52083333vw, 10px);
+}
+main {
+  height: 5000px;
+}
+
+/* 온보딩 인트로 시작 */
+.sec-gui-Onboarding-intro {
+  position: relative;
+  background-color: var(--Mono-100);
+  padding-bottom: 14.4rem;
+}
+.sec-gui-Onboarding-intro-grid {
+  max-width: var(--maxWidth);
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+.sec-gui-Onboarding-intro-grid > .title-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 8rem;
+}
+.sec-gui-Onboarding-intro-grid > .title-text-box > p:first-child {
+  color: var(--MainOrange);
+  font-weight: var(--BodyStrong);
+  font-size: var(--Heading-S);
+}
+.sec-gui-Onboarding-intro-grid > .title-text-box > p:nth-child(2) {
+  color: var(--Mono-22);
+  font-weight: var(--Heading);
+  font-size: var(--Heading-M);
+}
+.sec-gui-Onboarding-intro-grid > .title-text-box > p:last-child {
+  color: var(--Mono-30);
+  font-weight: var(--body);
+  font-size: var(--subHeading-M);
+}
+.sec-gui-Onboarding-intro-grid > .onboarding-background-img-box {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+}
+
+/* 온보딩 인트로 끝 */
+
+/* 온보딩 스크린 시작 */
+
+/* 온보딩 스크린 리스트 박스 1 */
+.sec-gui-Onboarding-screen {
+  background-color: var(--Mono-100);
+}
+.sec-gui-Onboarding-screen-list-box {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 14.4rem;
+}
+.sec-gui-Onboarding-screen-list-box .sec-gui-Onboarding-screen-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.sec-gui-Onboarding-screen-list-box .sec-gui-Onboarding-screen-list .sec-gui-Onboarding-screen-list-text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.sec-gui-Onboarding-screen-list-box .sec-gui-Onboarding-screen-list .sec-gui-Onboarding-screen-list-text-box .number-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--MainOrange);
+  border-radius: 0.4rem;
+}
+.sec-gui-Onboarding-screen-list-box .sec-gui-Onboarding-screen-list .sec-gui-Onboarding-screen-list-text-box .number-box > span {
+  color: var(--Mono-100);
+  font-size: var(--Body-M);
+  font-weight: var(--subHeading);
+}
+.sec-gui-Onboarding-screen-list-box .sec-gui-Onboarding-screen-list .sec-gui-Onboarding-screen-list-text-box > p {
+  color: var(--Mono-30);
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+}
+
+/* 온보딩 리스트 박스 2 */
+
+.sec-gui-Onboarding-screen-list-box-2 {
+  display: flex;
+  align-items: end;
+  gap: 2rem;
+  padding-bottom: 14.4rem;
+}
+.sec-gui-Onboarding-screen-list-box-2 .sec-gui-Onboarding-screen-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.sec-gui-Onboarding-screen-list-box-2 .sec-gui-Onboarding-screen-list .sec-gui-Onboarding-screen-list-text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.sec-gui-Onboarding-screen-list-box-2 .sec-gui-Onboarding-screen-list .sec-gui-Onboarding-screen-list-text-box .number-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--MainOrange);
+  border-radius: 0.4rem;
+}
+.sec-gui-Onboarding-screen-list-box-2 .sec-gui-Onboarding-screen-list .sec-gui-Onboarding-screen-list-text-box .number-box > span {
+  color: var(--Mono-100);
+  font-size: var(--Body-M);
+  font-weight: var(--subHeading);
+}
+.sec-gui-Onboarding-screen-list-box-2 .sec-gui-Onboarding-screen-list .sec-gui-Onboarding-screen-list-text-box > p {
+  color: var(--Mono-30);
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+}
