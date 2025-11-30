@@ -1,0 +1,44 @@
+:root {
+  /* color */
+  --MainOrange: #fa7c1c;
+  --AccentRed: #ff4341;
+  --AccentBlue: #0d70f1;
+  --subGreen: #8fdb00;
+  --MainOrangeB: #fef3c7;
+
+  /* grayscale */
+  --Mono-100: #fff;
+  --Mono-99: #fcfaf9;
+  --Mono-97: #f7f6f5;
+  --Mono-95: #f2efed;
+  --Mono-90: #e5e3e1;
+  --Mono-82: #d1cfcd;
+  --Mono-75: #bfbebc;
+  --Mono-60: #999896;
+  --Mono-50: #999896;
+  --Mono-40: #666564;
+  --Mono-30: #4c4c4b;
+  --Mono-22: #383837;
+  --Mono-15: #262626;
+  --Mono-2: #170800;
+  --Mono-0: #000;
+
+  /* grid */
+  --maxWidth: 164rem;
+
+  /* font */
+  --Heading: 600;
+  --Heading-L: 4.2rem;
+  --Heading-M: 3.2rem;
+  --Heading-S: 2.4rem;
+
+  --subHeading: 600;
+  --subHeading-L: 2.4rem;
+  --subHeading-M: 2rem;
+
+  --Body: 500;
+  --BodyStrong: 700;
+  --Body-L: 2rem;
+  --Body-M: 1.6rem;
+  --Body-S: 1.4rem;
+}
