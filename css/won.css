@@ -21,12 +21,27 @@ html {
   object-fit: cover;
 }
 
+.svg-box > svg {
+  overflow: visible;
+}
+
 /* component && lib */
+/* [data-hover="up"] {
+  cursor: pointer;
+} */
 
 /* comp for textbox */
 .tag {
   font-weight: 700;
   font-size: var(--Heading-S);
+  color: var(--MainOrange);
+  margin-bottom: 1.6rem;
+}
+.tag-fill {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  font-weight: 700;
+  font-size: 1.6rem;
   color: var(--MainOrange);
   margin-bottom: 1.6rem;
 }
@@ -144,6 +159,10 @@ body {
       .marquee {
         flex-shrink: 0;
         width: 100%;
+
+        img {
+          width: 100%;
+        }
       }
     }
   }
@@ -430,6 +449,99 @@ body {
           font-weight: var(--Body);
           font-size: var(--Body-M);
         }
+      }
+    }
+  }
+}
+
+/* -------------------------------------- sec survey -------------------------------------- */
+.sec-survey {
+  min-height: 100vh;
+
+  .content-wrap {
+    padding: 18rem 0;
+
+    .svg-box svg {
+      overflow: visible;
+    }
+  }
+
+  .heading-text {
+    text-align: center;
+
+    > .hg {
+      font-size: var(--Heading-M);
+    }
+  }
+
+  .box-1 {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+
+    .text {
+      position: absolute;
+      text-align: start;
+      top: 47%;
+      left: 74%;
+      font-size: var(--Body-L);
+      font-weight: var(--BodyStrong);
+      line-height: 1.3;
+
+      span {
+        display: block;
+
+        strong {
+          font-size: 2.4rem;
+        }
+      }
+    }
+
+    h4 {
+      font-size: var(--subHeading-M);
+      font-weight: var(--subHeading);
+      margin-bottom: 4.5rem;
+    }
+
+    .left {
+      position: relative;
+      flex: 1 1 0;
+      text-align: center;
+
+      .text {
+        span strong {
+          font-size: 4.8rem;
+        }
+
+        span:nth-child(1) {
+          color: var(--MainOrange);
+        }
+      }
+    }
+
+    .right {
+      position: relative;
+      flex: 1 1 0;
+      text-align: center;
+
+      .text-1 {
+        span strong {
+          font-size: 4.8rem;
+        }
+        span:nth-child(1) {
+          color: var(--MainOrange);
+        }
+      }
+
+      .text-2 {
+        opacity: 0.5;
+        top: 63%;
+        left: 19%;
+      }
+      .text-3 {
+        opacity: 0.5;
+        top: 14%;
+        left: 22%;
       }
     }
   }
