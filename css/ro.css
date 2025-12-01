@@ -52,8 +52,10 @@ main {
 
 /* 온보딩 스크린 리스트 박스 1 */
 .sec-gui-Onboarding-screen {
-  max-width: var(--maxWidth);
   background-color: var(--Mono-100);
+}
+.sec-gui-Onboarding-screen .sec-gui-Onboarding-screen-grid {
+  max-width: var(--maxWidth);
   margin: 0 auto;
 }
 .sec-gui-Onboarding-screen-list-box {
@@ -143,60 +145,62 @@ main {
 /* gui 홈 시작 */
 .sec-gui-home {
   position: relative;
-  max-width: var(--maxWidth);
+  overflow-x: hidden;
   background-color: var(--Mono-100);
+  padding-bottom: 14.4rem;
+}
+.sec-gui-home .sec-gui-home-grid {
+  max-width: var(--maxWidth);
   margin: 0 auto;
 }
-.sec-gui-home .background-img-box {
+.sec-gui-home .sec-gui-home-grid .background-img-box {
   position: absolute;
-  top: 10%;
+  top: 44rem;
   right: 0%;
 }
-.sec-gui-home .sec-gui-home-text-box {
+.sec-gui-home .sec-gui-home-grid .sec-gui-home-text-box {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   position: absolute;
-  top: 0;
+  top: 30rem;
   left: 50%;
-  transform: translate(-50%, -50%);
-  padding-bottom: 8rem;
+  translate: -50% -50%;
 }
-.sec-gui-home > .sec-gui-home-text-box > p:first-child {
+.sec-gui-home > .sec-gui-home-grid > .sec-gui-home-text-box > p:first-child {
   color: var(--MainOrange);
   font-weight: var(--BodyStrong);
   font-size: var(--Heading-S);
 }
-.sec-gui-home > .sec-gui-home-text-box > p:nth-child(2) {
+.sec-gui-home > .sec-gui-home-grid > .sec-gui-home-text-box > p:nth-child(2) {
   color: var(--Mono-22);
   font-weight: var(--Heading);
   font-size: var(--Heading-M);
 }
-.sec-gui-home > .sec-gui-home-text-box > p:last-child {
+.sec-gui-home > .sec-gui-home-grid > .sec-gui-home-text-box > p:last-child {
   color: var(--Mono-30);
   font-weight: var(--body);
   font-size: var(--subHeading-M);
 }
-.sec-gui-home-list-box {
+.sec-gui-home-grid .sec-gui-home-list-box {
   display: flex;
   align-items: end;
   gap: 2rem;
-  padding-bottom: 14.4rem;
 }
-.sec-gui-home-list-box .sec-gui-home-list {
+.sec-gui-home-grid .sec-gui-home-list-box .sec-gui-home-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
 }
-.sec-gui-home-list-box .sec-gui-home-list .sec-gui-home-list-text-box {
+.sec-gui-home-grid .sec-gui-home-list-box .sec-gui-home-list .sec-gui-home-list-text-box {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
-.sec-gui-home-list-box .sec-gui-home-list .sec-gui-home-list-text-box .number-box {
+.sec-gui-home-grid .sec-gui-home-list-box .sec-gui-home-list .sec-gui-home-list-text-box .number-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,13 +210,61 @@ main {
   background-color: var(--MainOrange);
   border-radius: 0.4rem;
 }
-.sec-gui-home-list-box .sec-gui-home-list .sec-gui-home-list-text-box .number-box > span {
+.sec-gui-home-grid .sec-gui-home-list-box .sec-gui-home-list .sec-gui-home-list-text-box .number-box > span {
   color: var(--Mono-100);
   font-size: var(--Body-M);
   font-weight: var(--subHeading);
 }
-.sec-gui-home-list-box .sec-gui-home-list .sec-gui-home-list-text-box > p {
+.sec-gui-home-grid .sec-gui-home-list-box .sec-gui-home-list .sec-gui-home-list-text-box > p {
   color: var(--Mono-30);
   font-size: var(--Body-M);
   font-weight: var(--Body);
+}
+
+/* gui 캐릭터 시작 */
+.sec-gui-character {
+  position: relative;
+  background-color: var(--Mono-100);
+  overflow-x: hidden;
+  padding: 10rem 0;
+}
+.sec-gui-character .sec-gui-character-grid {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+.sec-gui-character .sec-gui-character-grid .sec-gui-character-title-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 28.2rem;
+}
+.sec-gui-character-grid > .sec-gui-character-title-box > .title-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sec-gui-character-grid > .sec-gui-character-title-box > .title-text-box > p:nth-child(2) {
+  color: var(--MainOrange);
+  font-weight: var(--BodyStrong);
+  font-size: var(--Heading-S);
+}
+.sec-gui-character-grid > .sec-gui-character-title-box > .title-text-box > p:nth-child(3) {
+  color: var(--Mono-22);
+  font-weight: var(--Heading);
+  font-size: var(--Heading-M);
+}
+.sec-gui-character-grid > .sec-gui-character-title-box > .title-text-box > p:nth-child(4) {
+  color: var(--Mono-30);
+  font-weight: var(--body);
+  font-size: var(--subHeading-M);
+}
+.sec-gui-character-grid > .sec-gui-character-title-box .sec-gui-character-background-img-box {
+  position: absolute;
+  top: 50.6rem;
+  right: -5rem;
+}
+.sec-gui-character-grid .sec-gui-character-title-screen-box .sec-gui-character-title-screen-list .sec-gui-character-card-img-box img {
+  width: 39rem;
 }
