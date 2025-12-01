@@ -1,9 +1,6 @@
 html {
   font-size: max(0.52083333vw, 10px);
 }
-main {
-  height: 5000px;
-}
 
 /* 온보딩 인트로 시작 */
 .sec-gui-Onboarding-intro {
@@ -37,7 +34,7 @@ main {
 }
 .sec-gui-Onboarding-intro-grid > .title-text-box > p:last-child {
   color: var(--Mono-30);
-  font-weight: var(--body);
+  font-weight: var(--Body);
   font-size: var(--subHeading-M);
 }
 .sec-gui-Onboarding-intro-grid > .onboarding-background-img-box {
@@ -179,7 +176,7 @@ main {
 }
 .sec-gui-home > .sec-gui-home-grid > .sec-gui-home-text-box > p:last-child {
   color: var(--Mono-30);
-  font-weight: var(--body);
+  font-weight: var(--Body);
   font-size: var(--subHeading-M);
 }
 .sec-gui-home-grid .sec-gui-home-list-box {
@@ -222,6 +219,8 @@ main {
 }
 
 /* gui 캐릭터 시작 */
+
+/* 캐릭터 타이틀 시작 */
 .sec-gui-character {
   position: relative;
   background-color: var(--Mono-100);
@@ -231,6 +230,9 @@ main {
 .sec-gui-character .sec-gui-character-grid {
   max-width: var(--maxWidth);
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
 }
 .sec-gui-character .sec-gui-character-grid .sec-gui-character-title-box {
   display: flex;
@@ -257,7 +259,7 @@ main {
 }
 .sec-gui-character-grid > .sec-gui-character-title-box > .title-text-box > p:nth-child(4) {
   color: var(--Mono-30);
-  font-weight: var(--body);
+  font-weight: var(--Body);
   font-size: var(--subHeading-M);
 }
 .sec-gui-character-grid > .sec-gui-character-title-box .sec-gui-character-background-img-box {
@@ -265,6 +267,292 @@ main {
   top: 50.6rem;
   right: -5rem;
 }
+/* 캐릭터 타이틀 끝 */
+
+/* 캐릭터 타이틀 스크린 시작 */
+.sec-gui-character-title-screen-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+.sec-gui-character-title-screen-box .sec-gui-character-title-screen-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+  height: 59.5rem;
+  background-color: #fef3c7;
+  padding: 4.8rem 2.4rem;
+  border-radius: 2.4rem;
+}
 .sec-gui-character-grid .sec-gui-character-title-screen-box .sec-gui-character-title-screen-list .sec-gui-character-card-img-box img {
   width: 39rem;
+}
+.sec-gui-character-title-screen-box .sec-gui-character-title-screen-list .character-step-box {
+  background-color: var(--MainOrange);
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+.sec-gui-character-title-screen-box .sec-gui-character-title-screen-list .character-step-box > p {
+  color: var(--Mono-97);
+  font-size: var(--Body-M);
+  font-weight: 700;
+  text-align: center;
+}
+.sec-gui-character-title-screen-box .sec-gui-character-title-screen-list .sec-gui-character-title-screen-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.sec-gui-character-title-screen-box .sec-gui-character-title-screen-list .sec-gui-character-title-screen-text-box > img {
+  width: 2.4rem;
+}
+.sec-gui-character-title-screen-box .sec-gui-character-title-screen-list .sec-gui-character-title-screen-text-box > p:nth-child(2) {
+  color: var(--Mono-30);
+  font-size: var(--subHeading-L);
+  font-weight: var(--subHeading);
+}
+.sec-gui-character-title-screen-box .sec-gui-character-title-screen-list .sec-gui-character-title-screen-text-box > p:nth-child(3) {
+  color: var(--Mono-30);
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+}
+/* 캐릭터 타이틀 스크린 끝 */
+
+/* 캐릭터 스크린 시작 */
+.sec-gui-character-title-screen-box-2 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 4.4rem;
+}
+.sec-gui-character-title-screen-box-2 > .sec-gui-character-screen-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.sec-gui-character-title-screen-box-2 .sec-gui-character-screen-list > .sec-gui-character-screen-list-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.sec-gui-character-title-screen-box-2 .sec-gui-character-screen-list > .sec-gui-character-screen-list-text-box > .number-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--MainOrange);
+  border-radius: 0.4rem;
+}
+.sec-gui-character-title-screen-box-2 .sec-gui-character-screen-list > .sec-gui-character-screen-list-text-box > .number-box > span {
+  color: var(--Mono-100);
+  font-size: var(--Body-M);
+  font-weight: var(--subHeading);
+}
+.sec-gui-character-title-screen-box-2 .sec-gui-character-screen-list > .sec-gui-character-screen-list-text-box p {
+  color: var(--Mono-30);
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+}
+.sec-gui-character-title-screen-box-2 .sec-gui-character-screen-list > .sec-gui-character-screen-list-img-box > img {
+  width: 39.47rem;
+}
+/* 캐릭터 스크린 끝 */
+
+/* 리스트&리포트 시작 */
+.sec-gui-list-report {
+  overflow-x: hidden;
+  background-color: var(--Mono-100);
+  position: relative;
+}
+.sec-gui-list-report .sec-gui-list-report-background-img-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 49.1rem;
+}
+.sec-gui-list-report .sec-gui-list-report-grid {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  padding-left: 28.2rem;
+  padding-bottom: 17rem;
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .sec-gui-list-report-title-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 10rem;
+  padding-left: 6.6rem;
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .sec-gui-list-report-title-text-box > p:first-child {
+  color: var(--MainOrange);
+  font-weight: var(--BodyStrong);
+  font-size: var(--Heading-S);
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .sec-gui-list-report-title-text-box > p:nth-child(2) {
+  color: var(--Mono-22);
+  font-weight: var(--Heading);
+  font-size: var(--Heading-M);
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .sec-gui-list-report-title-text-box > p:last-child {
+  color: var(--Mono-30);
+  font-weight: var(--Body);
+  font-size: var(--subHeading-M);
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .arrow-box {
+  position: absolute;
+  top: 48.3rem;
+  left: 34%;
+  translate: -50% -50%;
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .absolute-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: absolute;
+  top: 48.3rem;
+  left: 54%;
+  translate: -50% -50%;
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .absolute-text-box .step-box {
+  background-color: var(--MainOrange);
+  border-radius: 1.2rem;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .absolute-text-box .step-box > p {
+  color: var(--Mono-97);
+  font-size: var(--Body-M);
+  font-weight: 700;
+  text-align: center;
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .absolute-text-box > p {
+  color: var(--Mono-30);
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+  line-height: 1.8;
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .absolute-text-box .sec-gui-list-report-background-img-box {
+  width: 49.1rem;
+}
+.sec-gui-list-report-title-img-box {
+  width: 39.591rem;
+}
+
+/* 풋터 시작 */
+
+footer {
+  overflow-x: hidden;
+  position: relative;
+  background-color: var(--MainOrange);
+  height: 95rem;
+}
+footer > .footer-background-img-box-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer > .footer-background-img-box-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+footer > .footer-background-img-box-1 > img {
+  width: 41.032rem;
+}
+footer > .footer-background-img-box-2 > img {
+  width: 37.424rem;
+}
+footer > .footer-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--maxWidth);
+  height: 100%;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  margin: 0 auto;
+}
+footer > .footer-grid > .logo-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+footer > .footer-grid > .logo-text-box > .logo-box > img {
+  width: 28.3rem;
+}
+footer > .footer-grid > .logo-text-box > .text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+footer > .footer-grid > .logo-text-box > .text-box > p {
+  color: var(--Mono-97);
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+footer > .footer-grid > .logo-text-box > .text-box > img {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+footer > .footer-grid > .footer-body-text-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 8rem;
+}
+footer > .footer-grid > .footer-body-text-box .footer-body-first-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 0;
+}
+footer > .footer-grid > .footer-body-text-box .footer-body-first-text-box > p {
+  color: var(--Mono-100);
+}
+footer > .footer-grid > .footer-body-text-box .footer-body-first-text-box > p:nth-child(1) {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+footer > .footer-grid > .footer-body-text-box .footer-body-first-text-box > p:nth-child(2) {
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+}
+footer > .footer-grid > .footer-body-text-box .footer-body-last-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14rem;
+  text-align: center;
+  padding-top: 2.4rem;
+}
+footer > .footer-grid > .footer-body-text-box .footer-body-last-text-box > .footer-body-last-text-list > p {
+  color: var(--Mono-100);
+}
+footer > .footer-grid > .footer-body-text-box .footer-body-last-text-box > .footer-body-last-text-list > p:nth-child(1) {
+  font-size: var(--Body-L);
+  font-weight: 600;
+}
+footer > .footer-grid > .footer-body-text-box .footer-body-last-text-box > .footer-body-last-text-list > p:nth-child(2) {
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
 }
