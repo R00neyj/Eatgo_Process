@@ -1227,3 +1227,75 @@ main {
   font-size: var(--Body-M);
   font-weight: var(--Body);
 }
+/* sec-character-level-up ------------------------------------ */
+.sec-character-level-up {
+  position: relative;
+  width: 100dvw;
+  height: 95rem;
+  padding: 2rem 0;
+  box-sizing: border-box;
+  background-color: var(--Mono-100);
+  cursor: default;
+  white-space: nowrap;
+}
+
+.sec-character-level-up > .character-level-up-container {
+  width: 100%;
+  max-width: var(--maxWidth);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 1.2rem;
+}
+/* sec-character-level-up > top-box ------------------------------------ */
+.sec-character-level-up > .character-level-up-container > .top-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.4rem 0;
+}
+
+.sec-character-level-up > .character-level-up-container > .top-box > .title-box {
+  color: var(--MainOrange);
+  font-size: calc(var(--Heading-L) - 0.2rem);
+  font-weight: var(--BodyStrong);
+}
+
+.sec-character-level-up > .character-level-up-container > .top-box > h3 {
+  color: var(--Mono-22);
+  font-size: var(--Heading-M);
+  font-weight: var(--BodyStrong);
+}
+
+.sec-character-level-up > .character-level-up-container > .top-box > span {
+  color: var(--Mono-30);
+  font-size: var(--Body-L);
+  font-weight: var(--Body);
+}
+/* sec-character-level-up > bottom-box ------------------------------------ */
+.sec-character-level-up > .character-level-up-container > .bottom-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-character-level-up > .character-level-up-container > .bottom-box > .img-container {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sec-character-level-up > .character-level-up-container > .bottom-box > .img-container > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/*  ------------------------------------------------------------------------------ */
+/*  ------------------------------------ NEXT ------------------------------------ */
+/*  ------------------------------------------------------------------------------ */
