@@ -754,6 +754,8 @@
       </div>
     </section>
 
+    <div class="blank" style="height: 100vh"></div>
+
     <!-- 
     <div class="heading-text">
       <h4 class="tag" data-gsap="popin">survey</h4>
@@ -971,6 +973,7 @@
         tl.from(pinTarget, { backgroundColor: "#fff" }, "start");
         tl.from(svgItems[0], { opacity: 0, scale: 0.75 }, "start");
         tl.to(svgItems[1], { y: "-100%" }, "<50%");
+        tl.to(svgItems[0], { y: -200, rotate: 4 }, "<");
 
         // 스크롤 트리거로 애니메이션 발동
         const st = ScrollTrigger.create({
