@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/variable.css" />
+    <link rel="stylesheet" href="../css/ro.css" />
+    <link rel="stylesheet" href="../css/won.css" />
+    <link rel="stylesheet" href="../css/gyu.css" />
+  </head>
+  <body>
+    <section class="sec-hero">
+      <h1 style="display: none">EATGO Process Page</h1>
+      <div class="svg-box logo">
+        <svg width="51.6rem" viewBox="0 0 516 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_1042_4569)">
+            <path
+              d="M89.5107 0C138.946 9.96886e-05 179.021 35.885 179.021 80.1514C179.021 124.418 138.946 160.304 89.5107 160.304C40.0754 160.304 0 124.418 0 80.1514C0.00018419 35.885 40.0756 0 89.5107 0ZM89.8027 44.293C89.77 43.9335 89.2798 43.9335 89.2471 44.293C87.0591 62.8926 72.2991 77.6682 53.7178 79.8584C53.3586 79.8911 53.3586 80.3814 53.7178 80.4141C72.299 82.6043 87.0591 97.379 89.2471 115.979C89.2797 116.338 89.77 116.338 89.8027 115.979C91.9907 97.3789 106.752 82.6042 125.333 80.4141C125.692 80.3811 125.692 79.8915 125.333 79.8584C106.752 77.6683 91.9907 62.8926 89.8027 44.293Z"
+              fill="#FCFAF9"
+              stroke="#FCFAF9"
+            />
+            <path d="M251.092 4.02051H184.082V170.11H251.092V4.02051Z" fill="#FCFAF9" />
+            <path
+              d="M108.909 247.712C116.42 228.557 125.727 214.043 129.711 215.318C133.532 216.527 131.05 231.858 124.225 250.033H240.383C240.383 204.956 188.459 168.41 124.388 168.41C60.3164 168.41 8.42578 204.923 8.42578 250H108.027C108.321 249.248 108.582 248.464 108.909 247.679V247.712Z"
+              fill="#FCFAF9"
+            />
+            <path
+              d="M407.548 11.0161C482.135 11.0161 505.027 29.1581 505.027 87.3432C505.027 111.696 502.284 141.475 496.112 176.942L425.411 171.516C429.526 139.579 431.126 124.706 431.126 110.062C431.126 89.5006 425.64 84.0744 401.376 84.0744C377.113 84.0744 346.71 86.7875 282.867 93.2598L277.609 24.5163C327.704 15.5924 370.712 10.9834 407.548 10.9834V11.0161Z"
+              fill="#FCFAF9"
+            />
+            <path d="M386.323 121.993V187.761H516.001V250H266.605V187.761H319.966V121.993H386.323Z" fill="#FCFAF9" />
+          </g>
+          <defs>
+            <clipPath id="clip0_1042_4569">
+              <rect width="516" height="250" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <svg width="51.6rem" viewBox="0 0 516 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M88.1517 33.2743H37.9461V40.2796H86.9842V63.6308H37.9461V70.6361H88.7355V101.576H0V3.50161H88.1517V33.2743Z" fill="#FCFAF9" />
+          <path
+            d="M176.281 3.50161L205.47 101.576H164.605L161.336 87.5657H135.182L131.913 101.576H91.0478L120.237 3.50161H176.281ZM141.72 59.5443H154.797L148.259 31.6397L141.72 59.5443Z"
+            fill="#FCFAF9"
+          />
+          <path d="M265.075 101.576H225.378V38.5283H197.356V3.50161H293.097V38.5283H265.075V101.576Z" fill="#FCFAF9" />
+          <path
+            d="M365.441 47.8688H400.468V101.576H350.496C312.083 101.576 295.97 84.6468 295.97 51.3714C295.97 18.0961 312.083 1.1665 350.496 1.1665C368.36 1.1665 381.67 2.68432 395.798 5.25295L393.463 37.0105C380.97 35.7262 368.36 34.4419 355.867 34.4419C344.191 34.4419 336.836 39.6959 336.836 51.3714C336.836 63.047 344.191 68.301 355.867 68.301H365.441V47.8688Z"
+            fill="#FCFAF9"
+          />
+          <path
+            d="M461.265 0C491.491 0 515.995 22.87 515.995 51.0811C515.995 79.2919 491.491 102.161 461.265 102.161C431.038 102.161 406.535 79.2918 406.535 51.0811C406.535 22.8702 431.038 0.000241663 461.265 0ZM461.44 28.8047C461.419 28.5672 461.095 28.5672 461.073 28.8047C459.626 41.0915 449.866 50.8519 437.579 52.2988C437.342 52.3204 437.342 52.6444 437.579 52.666C449.866 54.113 459.626 63.8741 461.073 76.1611C461.095 76.3981 461.418 76.398 461.44 76.1611C462.887 63.874 472.648 54.1129 484.936 52.666C485.173 52.6444 485.173 52.3204 484.936 52.2988C472.648 50.8519 462.887 41.0916 461.44 28.8047Z"
+            fill="#FCFAF9"
+          />
+        </svg>
+      </div>
+      <div class="img-box">
+        <img src="../images/sec-hero.webp" alt="" />
+      </div>
+      <div class="content-wrap"><span>EATGO</span><span>2025.11.24</span><span>APP DESIGN</span></div>
+      <div class="marquee-1 marquee-container">
+        <div class="marquee-wrapper">
+          <div class="marquee img-box">
+            <img src="../images/marquee-1.svg" alt="" />
+          </div>
+          <div class="marquee img-box">
+            <img src="../images/marquee-1.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="marquee-2 marquee-container">
+        <div class="marquee-wrapper">
+          <div class="marquee img-box">
+            <img src="../images/marquee-2.svg" alt="" />
+          </div>
+          <div class="marquee img-box">
+            <img src="../images/marquee-2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-overview">
+      <div class="content-wrap">
+        <div class="text-box">
+          <h4 class="tag" data-gsap="fade">Overview</h4>
+          <h2 class="hg" data-gsap="fade">
+            매번 식사할 때마다 직접 입력하거나 사진을 찍어야 하는 기록 방식,<br />
+            솔직히 너무 번거롭지 않나요?
+          </h2>
+          <p class="body" data-gsap="fade">
+            대부분의 식단 앱들이 이런 <strong>기록 피로도</strong>를 해결하지 못하고 있어요.<br />
+            일상의 흐름을 끊어버리는 수동 기록 방식 때문에 금방 지쳐버리기 쉬운 게 현실이에요.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="sec-background">
+      <div class="content-wrap">
+        <div class="box-1">
+          <div class="text-box">
+            <h4 class="tag" data-gsap="fade">Background</h4>
+            <h2 class="hg" data-gsap="fade">
+              건강 관리의 위기! <br />
+              비만율이 매년 가파르게 상승하고 있어요
+            </h2>
+            <p class="body" data-gsap="fade">디지털 환경 변화로 인한 활동량 감소가 가속화되며 비만 인구가 꾸준히 증가하고 있어요</p>
+          </div>
+          <div class="card-box">
+            <div class="card card-1" data-gsap="fadeUp" data-hover="up" data-delay="000">
+              <div class="inner">
+                <h3>최근 신경 쓰고 있는 건강 문제</h3>
+                <div class="graph-box">
+                  <div class="graph-1">
+                    <div class="name">체중관리</div>
+                    <div class="bar"><span data-gsap="counter" data-target="66"></span>%</div>
+                  </div>
+                  <div class="graph-2">
+                    <div class="name">체력 증진</div>
+                    <div class="bar"><span data-gsap="counter" data-target="50"></span>%</div>
+                  </div>
+                  <div class="graph-3">
+                    <div class="name">식습관</div>
+                    <div class="bar"><span data-gsap="counter" data-target="41"></span>%</div>
+                  </div>
+                </div>
+                <div class="text-box">
+                  <h5>전 연령층의 최대 건강 관심사는 '체중 관리'</h5>
+                  <p>체중 관리 관심 비율은 2022년 대비 12%p 이상 증가해 압도적 1순위로 올라섰어요</p>
+                </div>
+              </div>
+              <span class="source">출처: 오픈서베이 건강 관리 트렌드 리포트 2025</span>
+            </div>
+            <div class="card card-2" data-gsap="fadeUp" data-hover="up" data-delay="200">
+              <div class="inner">
+                <h3>성인 비만율 추이</h3>
+                <div class="graph-box">
+                  <div class="graph-1 bar-chart">
+                    <span>2013년</span>
+                    <div class="bar">
+                      <div class="bar-inner" data-gsap="slideLeft">33%</div>
+                    </div>
+                  </div>
+                  <div class="graph-2 bar-chart">
+                    <span>2023년</span>
+                    <div class="bar">
+                      <div class="bar-inner" data-gsap="slideLeft">47%</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div class="text-box">
+                    <p>OECD 중 가장 빠른 증가세</p>
+                    <p>현 추세라면 고도 비만 인구가 곧 2배에 달할 것이라는 경고</p>
+                  </div>
+                  <div class="text-box">
+                    <p>연간 13조 원의 사회적 비용</p>
+                    <p>개인의 미용 목적을 넘어, 국가적 차원의 관리 솔루션이 필요함</p>
+                  </div>
+                </div>
+              </div>
+              <span class="source">출처: 질병관리청(KDCA) 국민건강영양조사</span>
+            </div>
+            <div class="card card-3" data-gsap="fadeUp" data-hover="up" data-delay="400">
+              <div class="inner">
+                <h3>국내 성인 비만율 40% 육박</h3>
+                <h5>국내 성인 비만율이 40%에 육박하며, 특히 남성 2명 중 1명은 비만인 것으로 나타났어요</h5>
+                <p>
+                  “국내 비만 유병율이 급격하게 증가하고 있는 것으로 나타났다. 최근 10년 동안 성인 남자와 여자 모두에서 비만 유병률이 지속적으로 증가하고 있으며,
+                  2021년에는 성인 전체의 비만 유병률이 38.4%로 나타났다. “
+                </p>
+              </div>
+              <span class="source">출처 : 의사신문(http://www.doctorstimes.com)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-2">
+          <div class="text-box">
+            <h4 class="tag" data-gsap="fade">
+              <div class="svg-box">
+                <svg width="3.2rem" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1062_17856)">
+                    <path
+                      d="M72.0013 38.667C55.1013 38.667 41.3346 24.9003 41.3346 8.00033C41.3346 7.26699 40.7346 6.66699 40.0013 6.66699C39.268 6.66699 38.668 7.26699 38.668 8.00033C38.668 24.9003 24.9013 38.667 8.0013 38.667C7.26797 38.667 6.66797 39.267 6.66797 40.0003C6.66797 40.7337 7.26797 41.3337 8.0013 41.3337C24.9013 41.3337 38.668 55.1003 38.668 72.0003C38.668 72.7337 39.268 73.3337 40.0013 73.3337C40.7346 73.3337 41.3346 72.7337 41.3346 72.0003C41.3346 55.1003 55.1013 41.3337 72.0013 41.3337C72.7346 41.3337 73.3346 40.7337 73.3346 40.0003C73.3346 39.267 72.7346 38.667 72.0013 38.667Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1062_17856">
+                      <rect width="80" height="80" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </h4>
+            <h2 class="hg" data-gsap="fade">
+              디지털 헬스케어시장과 다이어트, 영양 앱 시장<br />
+              모두 큰 폭의 성장세를 보이고 있어요
+            </h2>
+            <p class="body" data-gsap="fade">고도화된 비만 문제와 만성 질환의 위협 속에서, 개인들은 더욱 편리하고 정밀한 건강 솔루션을 찾고 있어요</p>
+          </div>
+
+          <div class="card-box">
+            <div class="card card-1" data-gsap="fadeUp" data-delay="0" data-hover="up">
+              <div class="inner">
+                <h5>글로벌 영양 앱 시장 성장률</h5>
+                <div class="middle"><span class="count-numb" data-gsap="counter" data-target="21"></span>%<span class="years">연간</span></div>
+                <p>2029년 약 40조 원 규모 전망</p>
+              </div>
+              <span class="source">출처: Mordor Intelligence, GII Korea</span>
+            </div>
+            <div class="card card-2" data-gsap="fadeUp" data-delay="200" data-hover="up">
+              <div class="inner">
+                <h5>국내 헬스케어 성장률</h5>
+                <div class="middle"><span class="count-numb" data-gsap="counter" data-target="15"></span>%<span class="years">연간</span></div>
+                <p>데이터 기반 맞춤형 관리 수요 급증</p>
+              </div>
+              <span class="source">출처:삼일회계법인 PwC,한국바이오협회</span>
+            </div>
+            <div class="card card-3" data-gsap="fadeUp" data-delay="400" data-hover="up">
+              <div class="inner">
+                <h5>마이데이터 가입</h5>
+                <div class="middle"><span class="count-numb" data-gsap="counter" data-target="1.1"></span><span>억명</span></div>
+                <p>국내 가입자 수 (중복 포함)</p>
+              </div>
+              <span class="source">출처:금융위원회</span>
+            </div>
+            <div class="card card-4" data-gsap="fadeUp" data-delay="600" data-hover="up">
+              <div class="inner">
+                <h5>잠재 시장 규모</h5>
+                <div class="middle"><span class="count-numb" data-gsap="counter" data-target="2400"></span><span>조 원</span></div>
+                <p>2033년 글로벌 디지털 헬스케어</p>
+              </div>
+              <span class="source">출처:한국 바이오협회</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-survey">
+      <div class="content-wrap">
+        <div class="heading-text">
+          <h4 class="tag" data-gsap="fade">survey</h4>
+          <h2 class="hg" data-gsap="fade">사용자들은 기존 다이어트/식단 앱을 어떻게 받아들이고 있을까요?</h2>
+          <p class="body" data-gsap="fade">다양한 사용자를 상대로 실제 설문조사를 시행했어요</p>
+        </div>
+
+        <div class="box-1">
+          <div class="left">
+            <h4>이전에 칼로리 기록 앱이나 다이어트 앱을 사용해 본 경험이 있나요?</h4>
+            <div class="svg-box">
+              <svg width="33rem" viewBox="0 0 330 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle data-gsap="popin" data-delay="0" cx="165" cy="165" r="165" fill="#FFF9EE" />
+                <path
+                  data-gsap="popin"
+                  data-delay="200"
+                  data-hover="up"
+                  d="M165 0C206.073 4.89785e-07 245.669 15.3185 276.047 42.9609C306.426 70.6032 325.402 108.582 329.268 149.472C333.133 190.362 321.609 231.224 296.948 264.069C272.287 296.914 236.263 319.381 195.918 327.077L165 165L165 0Z"
+                  fill="url(#paint0_linear_1315_6371)"
+                />
+                <defs>
+                  <linearGradient id="paint0_linear_1315_6371" x1="165" y1="0" x2="165" y2="330" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FA7C1C" />
+                    <stop offset="1" stop-color="#FF4341" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="text">
+              <span><strong data-gsap="counter" data-target="48"></strong>%</span><span>그렇다</span>
+            </div>
+          </div>
+          <div class="svg-box">
+            <svg width="8rem" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                data-gsap="popin"
+                data-delay="0"
+                d="M18.5 9.13397C19.1667 9.51887 19.1667 10.4811 18.5 10.866L6.5 17.7942C5.83333 18.1791 5 17.698 5 16.9282L5 3.0718C5 2.302 5.83333 1.82087 6.5 2.20577L18.5 9.13397Z"
+                fill="#FA7C1C"
+              />
+              <path
+                data-gsap="popin"
+                data-delay="200"
+                d="M48.5 9.13397C49.1667 9.51887 49.1667 10.4811 48.5 10.866L36.5 17.7942C35.8333 18.1791 35 17.698 35 16.9282L35 3.0718C35 2.302 35.8333 1.82087 36.5 2.20577L48.5 9.13397Z"
+                fill="#FA7C1C"
+              />
+              <path
+                data-gsap="popin"
+                data-delay="400"
+                d="M78.5 9.13397C79.1667 9.51887 79.1667 10.4811 78.5 10.866L66.5 17.7942C65.8333 18.1791 65 17.698 65 16.9282L65 3.0718C65 2.302 65.8333 1.82087 66.5 2.20577L78.5 9.13397Z"
+                fill="#FA7C1C"
+              />
+            </svg>
+          </div>
+          <div class="right">
+            <h4>사용해봤다면 사용 기간은 어떻게 되나요?</h4>
+            <div class="svg-box">
+              <svg width="33rem" viewBox="0 0 330 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle data-gsap="popin" data-delay="0" cx="165" cy="165" r="165" fill="#FFF9EE" />
+                <path
+                  data-gsap="popin"
+                  data-delay="400"
+                  d="M70.3434 300.149C40.4965 279.244 18.4092 249.047 7.52802 214.27C-3.35312 179.493 -2.41593 142.093 10.1934 107.904L165 165L70.3434 300.149Z"
+                  fill="#FFE7A6"
+                />
+                <path
+                  data-hover="up"
+                  data-gsap="popin"
+                  data-delay="200"
+                  d="M165 0C191.05 3.10646e-07 216.73 6.16803 239.939 17.9994C263.147 29.8307 283.224 46.9891 298.528 68.0704C313.831 89.1518 323.925 113.557 327.984 139.289C332.044 165.021 329.953 191.348 321.882 216.117C313.812 240.886 299.992 263.391 281.552 281.793C263.113 300.194 240.579 313.968 215.794 321.987C191.009 330.007 164.677 332.043 138.953 327.931C113.23 323.819 88.8454 313.674 67.7956 298.328L165 165V0Z"
+                  fill="url(#paint0_linear_1082_21895)"
+                  style="position: relative; z-index: 2"
+                />
+                <defs>
+                  <linearGradient id="paint0_linear_1082_21895" x1="165" y1="0" x2="165" y2="330" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FA7C1C" />
+                    <stop offset="1" stop-color="#FF4341" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="text text-1">
+              <span><strong data-gsap="counter" data-target="60" data-delay="0">0</strong>%</span><span>1개월 미만</span>
+            </div>
+            <div class="text text-2">
+              <span><strong data-gsap="counter" data-target="20" data-delay="200">0</strong>%</span><span>1~3개월</span>
+            </div>
+            <div class="text text-3">
+              <span><strong data-gsap="counter" data-target="20" data-delay="400">0</strong>%</span><span>6개월 이상</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="heading-text heading-text-2">
+          <h4 class="tag-fill" data-gsap="fade"><span>Pain Point</span></h4>
+          <h2 class="hg" data-gsap="fade">사용자는 기록하는 과정을 가장 큰 스트레스로 느껴요</h2>
+          <p class="body" data-gsap="fade">
+            대부분의 사용자가 사용하더라도 1개월을 넘기기 힘들었어요<br />
+            단 19.2%의 사용자만 6개월 이상 지속적으로 사용했어요
+          </p>
+        </div>
+
+        <div class="box-2">
+          <div class="left">
+            <div class="inner">
+              <h4>기록 시 가장 귀찮거나 번거로웠던 과정은 무엇이었습니까?</h4>
+              <div class="graph-box">
+                <div class="graph graph-1" data-gsap="slideLeft">
+                  <div class="bar"><span data-gsap="counter" data-target="38"></span>%</div>
+                  <div class="name">검색 시 정확한 메뉴가 안 나옴</div>
+                </div>
+                <div class="graph graph-2" data-gsap="slideLeft">
+                  <div class="bar"><span data-gsap="counter" data-target="25"></span>%</div>
+                  <div class="name">검색 시 정확한 메뉴가 안 나옴</div>
+                </div>
+                <div class="graph graph-3" data-gsap="slideLeft">
+                  <div class="bar"><span data-gsap="counter" data-target="25"></span>%</div>
+                  <div class="name">검색 시 정확한 메뉴가 안 나옴</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <h4>자동 기록된 칼로리 정보가 100% 정확하지 않더라도, 편의성 때문에 사용할 의향이 있습니까?</h4>
+            <div class="svg-box">
+              <svg width="33rem" viewBox="0 0 330 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle data-gsap="popin" cx="165" cy="165" r="165" fill="#FFF9EE" />
+                <path
+                  data-gsap="popin"
+                  data-delay="500"
+                  data-hover="up"
+                  d="M165 0C202.062 4.41961e-07 238.045 12.4778 267.151 35.4227C296.256 58.3676 316.789 90.4434 325.441 126.482C334.093 162.52 330.36 200.421 314.844 234.079C299.327 267.737 272.931 295.19 239.908 312.016C206.886 328.842 169.16 334.06 132.81 326.83C96.4601 319.599 63.6029 300.341 39.533 272.159C15.4631 243.977 1.58225 208.511 0.127207 171.478C-1.32784 134.444 9.72764 97.9993 31.5122 68.0154L165 165L165 0Z"
+                  fill="url(#paint0_linear_1315_6371)"
+                />
+                <defs>
+                  <linearGradient id="paint0_linear_1315_6371" x1="165" y1="0" x2="165" y2="330" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FA7C1C" />
+                    <stop offset="1" stop-color="#FF4341" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="text">
+              <span><strong data-gsap="counter" data-target="85"></strong>%</span><span>그렇다</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="svg-box arrow">
+          <svg width="8rem" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              data-gsap="popin"
+              d="M18.5 9.13397C19.1667 9.51887 19.1667 10.4811 18.5 10.866L6.5 17.7942C5.83333 18.1791 5 17.698 5 16.9282L5 3.0718C5 2.302 5.83333 1.82087 6.5 2.20577L18.5 9.13397Z"
+              fill="#FA7C1C"
+            />
+            <path
+              data-gsap="popin"
+              d="M48.5 9.13397C49.1667 9.51887 49.1667 10.4811 48.5 10.866L36.5 17.7942C35.8333 18.1791 35 17.698 35 16.9282L35 3.0718C35 2.302 35.8333 1.82087 36.5 2.20577L48.5 9.13397Z"
+              fill="#FA7C1C"
+            />
+            <path
+              data-gsap="popin"
+              d="M78.5 9.13397C79.1667 9.51887 79.1667 10.4811 78.5 10.866L66.5 17.7942C65.8333 18.1791 65 17.698 65 16.9282L65 3.0718C65 2.302 65.8333 1.82087 66.5 2.20577L78.5 9.13397Z"
+              fill="#FA7C1C"
+            />
+          </svg>
+        </div>
+
+        <div class="box-3">
+          <div class="heading-text">
+            <h4 class="tag-fill" data-gsap="fade"><span>Pain Point</span></h4>
+            <h2 class="hg" data-gsap="fade">검색 실패 및 데이터 부족으로 좌절감을 느껴요</h2>
+            <p class="body" data-gsap="fade">사용자는 100% 정확하지 않더라도 편의성을 위해 자동 기능을 쓸 의향이 있다고 답했어요</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+    <div class="heading-text">
+      <h4 class="tag" data-gsap="fade">survey</h4>
+      <h2 class="hg" data-gsap="fade">사용자들은 기존 다이어트/식단 앱을 어떻게 받아들이고 있을까요?</h2>
+      <p class="body" data-gsap="fade">다양한 사용자를 상대로 실제 설문조사를 시행했어요</p>
+    </div>
+     -->
+
+    <!-- aos animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <!-- gsap svg -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"></script>
+    <!-- gsap scrollsmoother -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+      AOS.init();
+
+      const gsapAni__init = () => {
+        const AniTarget = document.querySelectorAll(`
+      [data-gsap="fade"],
+      [data-gsap="popin"],
+      [data-gsap="slideLeft"],
+      [data-gsap="counter"],
+      [data-gsap="fadeUp"]`);
+
+        if (AniTarget.length === 0) return;
+        gaspAni__logo();
+        hoverAni();
+        const Duration = 600;
+
+        AniTarget.forEach((el) => {
+          const AniName = el.getAttribute("data-gsap");
+          const delay = Number(el.dataset.delay) || 0;
+
+          gsap.set(el, { transformOrigin: "50% 50%" });
+
+          if (AniName === "popin") {
+            gsapAni__popIn(el, Duration, delay);
+          } else if (AniName === "fade") {
+            gsapAni__fade(el, Duration, delay);
+          } else if (AniName === "slideLeft") {
+            gsapAni__slideLeft(el, Duration, delay);
+          } else if (AniName === "fadeUp") {
+            gsapAni__fadeUp(el, Duration, delay);
+          } else if (AniName === "counter") {
+            gsapAni__counter(el, Duration, delay);
+          }
+        });
+      };
+
+      const gsapAni__popIn = (target, duration, delay) => {
+        const tl = gsap.timeline();
+        tl.from(target, { delay: delay / 1000 });
+        tl.from(target, { scale: 0.75, opacity: 0, duration: duration / 1000, ease: "none" });
+        gaspAni__createST(target, tl, 1);
+      };
+
+      const gsapAni__fadeUp = (target, duration, delay) => {
+        const tl = gsap.timeline();
+        tl.from(target, { delay: delay / 1000 });
+        tl.from(target, { y: 100, opacity: 0, duration: duration / 1000, ease: "power1.out" });
+        gaspAni__createST(target, tl, false);
+      };
+
+      const gsapAni__fade = (target, duration, delay) => {
+        const tl = gsap.timeline();
+        tl.from(target, { delay: delay / 1000 });
+        tl.from(target, { opacity: 0, duration: duration / 1000, ease: "none" });
+        gaspAni__createST(target, tl, 1);
+      };
+
+      const gsapAni__slideLeft = (target, duration, delay) => {
+        const tl = gsap.timeline();
+        tl.from(target, { delay: delay / 1000 });
+        tl.from(target, { opacity: 0, x: "-25%", duration: duration / 1000, ease: "none" });
+        gaspAni__createST(target, tl, 1);
+      };
+
+      const gsapAni__counter = (target, duration, delay) => {
+        let targetNum = parseFloat(target.getAttribute("data-target"));
+        const tl = gsap.timeline();
+        tl.from(target, { delay: delay / 1000 });
+        tl.to(target, {
+          innerHTML: targetNum,
+          duration: (duration * 3) / 1000,
+          snap: { innerHTML: 0.1 },
+          ease: "none",
+        });
+        gaspAni__createST(target, tl, false);
+      };
+
+      const gaspAni__createST = (targetEl, timeline, scrub) => {
+        const st = ScrollTrigger.create({
+          trigger: targetEl,
+          animation: timeline,
+          scrub: scrub,
+          start: "top bottom",
+          end: "bottom +=75%",
+          toggleActions: "play none none reverse",
+        });
+      };
+      function hoverAni() {
+        const targetAll = document.querySelectorAll(`[data-hover="up"]`);
+        targetAll.forEach((el) => {
+          el.addEventListener("pointerenter", () => {
+            gsap.to(el, { y: "-0.5vw", duration: 0.3, ease: "power1.out" });
+          });
+          el.addEventListener("pointerleave", () => {
+            gsap.to(el, { y: 0, duration: 0.3, ease: "power1.out" });
+          });
+        });
+      }
+
+      const gaspAni__logo = () => {
+        const pathArr = document.querySelectorAll(".sec-hero .logo path");
+        console.log(pathArr);
+        let duration = 0.4,
+          ease = "power1.out";
+
+        const tl = gsap.timeline();
+        tl.from(pathArr, {
+          opacity: 0,
+          scale: 0.5,
+          filter: "blur(4px)",
+          transformOrigin: "50% 50%",
+          stagger: (duration * 2) / pathArr.length,
+          duration: duration,
+          ease: ease,
+        });
+        tl.to(pathArr[9], { x: 5, y: -5, yoyo: true, repeat: 1, duration: duration, ease: ease });
+        tl.to(pathArr[3], { x: 5, y: -5, yoyo: true, repeat: 1, duration: duration, ease: ease });
+
+        const mainImg = document.querySelector(".sec-hero > .img-box img");
+        gsap.from(mainImg, { y: 100, opacity: 0, duration: 1, ease: "power1.out" });
+
+        const mainText = document.querySelector(".sec-hero .content-wrap");
+        gsap.from(mainText, { y: -100, opacity: 0, duration: 1, delay: 0.5, ease: "power1.out" });
+      };
+
+      gsapAni__init();
+    </script>
+  </body>
+</html>
