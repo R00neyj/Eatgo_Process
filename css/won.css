@@ -38,12 +38,17 @@ html {
   margin-bottom: 1.6rem;
 }
 .tag-fill {
-  display: inline-block;
-  padding: 0.6rem 1.4rem;
   font-weight: 700;
   font-size: 1.6rem;
-  color: var(--MainOrange);
+  color: var(--Mono-100);
   margin-bottom: 1.6rem;
+
+  > span {
+    display: inline-block;
+    background-color: var(--MainOrange);
+    padding: 0.6rem 1.4rem;
+    border-radius: 0.8rem;
+  }
 }
 
 .hg {
@@ -459,7 +464,7 @@ body {
   min-height: 100vh;
 
   .content-wrap {
-    padding: 18rem 0;
+    padding: 18rem 0 0;
 
     .svg-box svg {
       overflow: visible;
@@ -545,4 +550,128 @@ body {
       }
     }
   }
+}
+
+.sec-survey .heading-text-2 {
+  margin: 14rem 0;
+  > .hg {
+    font-size: var(--Heading-L);
+  }
+}
+
+/* box-2 left graph */
+.sec-survey .box-2 {
+  display: flex;
+  gap: 2rem;
+  .left {
+    flex: 1 1 0;
+    .inner {
+      background-color: var(--Mono-99);
+      border-radius: 2.4rem;
+      padding: 4.8rem 2.4rem;
+
+      h4 {
+        font-weight: 700;
+        font-size: var(--subHeading-M);
+        color: var(--Mono-30);
+      }
+
+      .graph-box {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        margin-top: 6rem;
+        overflow-x: hidden;
+        overflow-y: visible;
+
+        .graph {
+          display: flex;
+          gap: 1.2rem;
+
+          .name {
+            font-size: var(--Body-M);
+            font-weight: var(--Body);
+            padding: 1.2rem 1.6rem;
+            background-color: var(--Mono-100);
+            border-radius: 9rem;
+          }
+
+          .bar {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            padding-right: 1rem;
+            color: var(--Mono-100);
+            background: linear-gradient(to right, var(--AccentRed), var(--MainOrange));
+            font-size: var(--Body-M);
+            font-weight: var(--BodyStrong);
+            width: 19.6rem;
+            border-radius: 0.4rem 1.2rem 1.2rem 0.4rem;
+          }
+
+          &:nth-child(1) .bar {
+            width: 28rem;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    position: relative;
+    flex: 1 1 0;
+    text-align: center;
+
+    h4 {
+      font-size: var(--subHeading-M);
+      font-weight: 700;
+      color: var(--Mono-30);
+    }
+
+    .svg-box {
+      margin-top: 4rem;
+    }
+
+    .text {
+      position: absolute;
+      top: 19rem;
+      left: 60rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      font-size: var(--Body-L);
+      font-weight: var(--BodyStrong);
+
+      strong {
+        font-size: 4.8rem;
+      }
+
+      span {
+        display: inline-block;
+      }
+      span:nth-child(1) {
+        color: var(--MainOrange);
+        line-height: 1.3;
+      }
+    }
+  }
+}
+
+/* box-3 */
+.sec-survey .svg-box.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  padding: 11rem 0;
+  svg {
+    transform-origin: center center;
+    transform: rotate(90deg);
+  }
+}
+
+.sec-survey .box-3 .hg {
+  font-size: var(--Heading-L);
 }
