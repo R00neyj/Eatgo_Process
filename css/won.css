@@ -120,6 +120,7 @@ body {
     position: absolute;
     top: 38.4rem;
     left: -25rem;
+    pointer-events: none;
     animation: hovering 2s infinite cubic-bezier(0.42, 0, 0.18, 0.98) alternate;
 
     > img {
@@ -779,7 +780,7 @@ body {
 }
 /* -------------------------------------- sec persona -------------------------------------- */
 .sec-persona .content-wrap {
-  padding-bottom: 10rem;
+  padding: 10rem 0;
 
   .heading-text {
     padding-bottom: 8rem;
@@ -872,6 +873,7 @@ body {
 }
 /* -------------------------------------- sec journeyMap -------------------------------------- */
 .sec-journeyMap .content-wrap {
+  padding: 10rem 0;
   .heading-text .hg {
     font-size: var(--Heading-M);
   }
