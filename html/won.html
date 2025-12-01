@@ -497,21 +497,21 @@
         </div>
         <div class="tag-fill" data-gsap="popin"><span>Solution</span></div>
         <div class="box">
-          <div class="card card" data-gsap="fadeUp" data-delay="0">
+          <div class="card card" data-gsap="fadeUp" data-delay="0" data-hover="up">
             <h4>캐릭터와 함께 성장해요</h4>
             <p>
               지칠 수 있는 다이어트의 여정을 외롭지 않게<br />
               캐릭터와 함께 설정한 목표를 이루세요
             </p>
           </div>
-          <div class="card card" data-gsap="fadeUp" data-delay="200">
+          <div class="card card" data-gsap="fadeUp" data-delay="200" data-hover="up">
             <h4>먹고 잊으세요!</h4>
             <p>
               카드 내역을 기반으로 식단 일지를 자동 기록해줘요<br />
               일지를 기반으로 식단 추천과 내 식습관 분석까지 도와줘요
             </p>
           </div>
-          <div class="card card" data-gsap="fadeUp" data-delay="400">
+          <div class="card card" data-gsap="fadeUp" data-delay="400" data-hover="up">
             <h4>나만의 맞춤 식단코치</h4>
             <p>
               설정한 목표를 이룰 수 있도록 <br />
@@ -527,6 +527,207 @@
           <h4 class="tag" data-gsap="popin">Persona</h4>
           <h2 class="hg" data-gsap="fade">페르소나를 설정하여 소비자의 입장을 분석해보았어요</h2>
           <p class="body" data-gsap="fade">우리가 주목한 문제점을 사용자의 입장에서 바라보기 위해 두 가지의 페르소나를 설정했어요</p>
+        </div>
+        <div class="box">
+          <div class="left">
+            <div class="top">
+              <div class="img-box">
+                <img src="../images/sec_persona_1.webp" alt="" />
+              </div>
+              <div class="text-box">
+                <h3>김다은<span>(23세) 대학생 / 여성</span></h3>
+                <div class="points-name">Pain Points</div>
+                <ul class="painP">
+                  <li>기록 누락이 잦아 전체 관리가 무너진다</li>
+                  <li>감으로만 섭취 칼로리를 계산하다 보니 체중 조절이 어렵다</li>
+                  <li>데이터가 쌓이지 않아 패턴 분석이 불가능하다</li>
+                </ul>
+                <div class="points-name">Needs</div>
+                <ul class="needs">
+                  <li>기록의 번거로움을 줄이기</li>
+                  <li>정확한 데이터 기반 식습관 개선</li>
+                </ul>
+              </div>
+            </div>
+            <div class="svg-box arrow">
+              <svg width="8rem" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  data-gsap="popin"
+                  d="M18.5 9.13397C19.1667 9.51887 19.1667 10.4811 18.5 10.866L6.5 17.7942C5.83333 18.1791 5 17.698 5 16.9282L5 3.0718C5 2.302 5.83333 1.82087 6.5 2.20577L18.5 9.13397Z"
+                  fill="#FA7C1C"
+                />
+                <path
+                  data-gsap="popin"
+                  d="M48.5 9.13397C49.1667 9.51887 49.1667 10.4811 48.5 10.866L36.5 17.7942C35.8333 18.1791 35 17.698 35 16.9282L35 3.0718C35 2.302 35.8333 1.82087 36.5 2.20577L48.5 9.13397Z"
+                  fill="#FA7C1C"
+                />
+                <path
+                  data-gsap="popin"
+                  d="M78.5 9.13397C79.1667 9.51887 79.1667 10.4811 78.5 10.866L66.5 17.7942C65.8333 18.1791 65 17.698 65 16.9282L65 3.0718C65 2.302 65.8333 1.82087 66.5 2.20577L78.5 9.13397Z"
+                  fill="#FA7C1C"
+                />
+              </svg>
+            </div>
+            <div class="bottom" data-gsap="fadeUp" data-delay="0">
+              매번 음식 칼로리를 찾아 헤매고 감으로 기록하는게 지겨워,<br />
+              정확한 관리가 되는 자동기록 어플이 있었으면 좋겠어!
+            </div>
+          </div>
+          <div class="right">
+            <div class="top">
+              <div class="img-box">
+                <img src="../images/sec_persona_2.webp" alt="" />
+              </div>
+              <div class="text-box">
+                <h3>박성호<span>(30세) 직장인 / 남성</span></h3>
+                <div class="points-name">Pain Points</div>
+                <ul class="painP">
+                  <li>업무 시간에 기록할 시간이 없어 누락이 많다</li>
+                  <li>점심·회식 메뉴 칼로리를 직접 검색하고 합산해야 한다</li>
+                  <li>정확히 기록되지 않으니 운동·체중 변화 분석이 어렵다</li>
+                </ul>
+                <div class="points-name">Pain Points</div>
+                <ul class="needs">
+                  <li>최소한의 노력으로 섭취 칼로리를 관리</li>
+                  <li>회식/외식 후에도 칼로리 파악 용이</li>
+                </ul>
+              </div>
+            </div>
+            <div class="svg-box arrow">
+              <svg width="8rem" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  data-gsap="popin"
+                  d="M18.5 9.13397C19.1667 9.51887 19.1667 10.4811 18.5 10.866L6.5 17.7942C5.83333 18.1791 5 17.698 5 16.9282L5 3.0718C5 2.302 5.83333 1.82087 6.5 2.20577L18.5 9.13397Z"
+                  fill="#FA7C1C"
+                />
+                <path
+                  data-gsap="popin"
+                  d="M48.5 9.13397C49.1667 9.51887 49.1667 10.4811 48.5 10.866L36.5 17.7942C35.8333 18.1791 35 17.698 35 16.9282L35 3.0718C35 2.302 35.8333 1.82087 36.5 2.20577L48.5 9.13397Z"
+                  fill="#FA7C1C"
+                />
+                <path
+                  data-gsap="popin"
+                  d="M78.5 9.13397C79.1667 9.51887 79.1667 10.4811 78.5 10.866L66.5 17.7942C65.8333 18.1791 65 17.698 65 16.9282L65 3.0718C65 2.302 65.8333 1.82087 66.5 2.20577L78.5 9.13397Z"
+                  fill="#FA7C1C"
+                />
+              </svg>
+            </div>
+            <div class="bottom" data-gsap="fadeUp" data-delay="200">
+              매번 음식 칼로리를 찾아 헤매고 감으로 기록하는게 지겨워,<br />
+              정확한 관리가 되는 자동기록 어플이 있었으면 좋겠어!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-journeyMap">
+      <div class="content-wrap">
+        <div class="heading-text">
+          <h4 class="tag" data-gsap="popin">Journey Map</h4>
+          <h2 class="hg" data-gsap="fade">설정한 페르소나를 기반으로 여정을 정리했어요</h2>
+          <p class="body" data-gsap="fade">정리된 인사이트를 바탕으로 사용자가 겪는 흐름과 문제점을 파악해봤어요</p>
+        </div>
+        <div class="grid-box">
+          <div class="column-heading">
+            <div class="setLeft">단계</div>
+            <div>인지 및 탐색</div>
+            <div>온보딩 및 연동</div>
+            <div>자동 기록</div>
+            <div>데이터 확인 및 시각화</div>
+            <div>루틴 유지 및 이탈 방지</div>
+          </div>
+          <div class="item-1 item row-heading">행동</div>
+          <div class="item-2 item">SNS(인스타/틱톡)에서 '가장 핫한 다이어트 앱'을 검색하고 다운로드한다.</div>
+          <div class="item-3 item">회원가입 후 카드 결제 내역 연동 동의 및 기본 정보를 입력한다.</div>
+          <div class="item-4 item">평소처럼 친구들과 외식을 하거나 배달 앱으로 음식을 주문 및 결제한다.</div>
+          <div class="item-5 item">자동 기록된 내역을 확인하고, 주간 분석 보고서를 본다.</div>
+          <div class="item-6 item">꾸준히 앱을 사용하며 충동 소비 후 앱을 닫고 싶은 충동과 싸운다.</div>
+          <div class="item-7 item row-heading">터치 포인트</div>
+          <div class="item-8 item">인스타그램 광고, 친구 스토리 공유, 앱스토어 스크린샷 (디자인).</div>
+          <div class="item-9 item">가입 화면, 데이터 연동 동의 팝업, 보안 안내 화면.</div>
+          <div class="item-10 item">결제 후 도착하는 푸시 알림 (핵심 기능), 앱 대시보드.</div>
+          <div class="item-11 item">트렌디한 리포트 화면, 기록 수정 모달, SNS 공유 버튼.</div>
+          <div class="item-12 item">충동 소비 방지 알림, 유료 구독 페이지, 목표 달성 현황.</div>
+          <div class="item-13 item row-heading">니즈</div>
+          <div class="item-14 item">'기록이 가장 단순한 앱'이라는 점과 트렌디한 디자인.</div>
+          <div class="item-15 item">보안 문제 없음을 신속하게 확신하고 싶음. 설정 과정이 1분 이내로 끝나야 함.</div>
+          <div class="item-16 item">결제 내역이 자동으로 식단이 되는 경험 (속도 ≫ 정확도).</div>
+          <div class="item-17 item">'내 돈과 칼로리 소비 패턴'을 한눈에 파악하고 친구들에게 공유하고 싶음.</div>
+          <div class="item-18 item">감정 기복이 생길 때 이탈을 막아주는 개입이 필요함.</div>
+          <div class="item-19 item row-heading"><span class="dot-orange">감정</span><span class="dot-blue">기회영역</span></div>
+          <div class="item-20 item">
+            <div class="svg-box">
+              <svg width="132.6rem" viewBox="0 0 1326 274" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_1359_18669" fill="white">
+                  <path d="M0 0H1326V273H0V0Z" />
+                </mask>
+                <path d="M0 0V1H1326V0V-1H0V0ZM1326 273V272H0V273V274H1326V273Z" fill="#7F7F7D" mask="url(#path-1-inside-1_1359_18669)" />
+                <path opacity="0.1" d="M122.328 137.5H0V274H1326V135L1203.67 17L924.465 17.0009L663.934 50.0007L383.793 137.5H122.328Z" fill="#0D70F1" />
+                <path
+                  opacity="0.15"
+                  d="M387.625 219L121.585 34L0 137V273H1325.53L1326 135C1326 135 1251.43 194.504 1203.95 240L925.773 34L667.201 88L387.625 219Z"
+                  fill="#FA7C1C"
+                />
+                <path
+                  d="M130 36C130 40.4183 126.642 44 122.5 44C118.358 44 115 40.4183 115 36C115 31.5817 118.358 28 122.5 28C126.642 28 130 31.5817 130 36Z"
+                  fill="#FA7C1C"
+                />
+                <path
+                  d="M395 218C395 222.418 391.642 226 387.5 226C383.358 226 380 222.418 380 218C380 213.582 383.358 210 387.5 210C391.642 210 395 213.582 395 218Z"
+                  fill="#FA7C1C"
+                />
+                <path
+                  d="M395 137C395 141.418 391.642 145 387.5 145C383.358 145 380 141.418 380 137C380 132.582 383.358 129 387.5 129C391.642 129 395 132.582 395 137Z"
+                  fill="#0D70F1"
+                />
+                <path
+                  d="M130 137C130 141.418 126.642 145 122.5 145C118.358 145 115 141.418 115 137C115 132.582 118.358 129 122.5 129C126.642 129 130 132.582 130 137Z"
+                  fill="#0D70F1"
+                />
+                <path
+                  d="M675 89C675 93.4183 671.642 97 667.5 97C663.358 97 660 93.4183 660 89C660 84.5817 663.358 81 667.5 81C671.642 81 675 84.5817 675 89Z"
+                  fill="#FA7C1C"
+                />
+                <path
+                  d="M675 50C675 54.4183 671.642 58 667.5 58C663.358 58 660 54.4183 660 50C660 45.5817 663.358 42 667.5 42C671.642 42 675 45.5817 675 50Z"
+                  fill="#0D70F1"
+                />
+                <path
+                  d="M933 34C933 38.4183 929.642 42 925.5 42C921.358 42 918 38.4183 918 34C918 29.5817 921.358 26 925.5 26C929.642 26 933 29.5817 933 34Z"
+                  fill="#FA7C1C"
+                />
+                <path
+                  d="M933 16C933 20.4183 929.642 24 925.5 24C921.358 24 918 20.4183 918 16C918 11.5817 921.358 8 925.5 8C929.642 8 933 11.5817 933 16Z"
+                  fill="#0D70F1"
+                />
+                <path
+                  d="M1212 239C1212 243.418 1208.64 247 1204.5 247C1200.36 247 1197 243.418 1197 239C1197 234.582 1200.36 231 1204.5 231C1208.64 231 1212 234.582 1212 239Z"
+                  fill="#FA7C1C"
+                />
+                <path
+                  d="M1212 18C1212 22.4183 1208.64 26 1204.5 26C1200.36 26 1197 22.4183 1197 18C1197 13.5817 1200.36 10 1204.5 10C1208.64 10 1212 13.5817 1212 18Z"
+                  fill="#0D70F1"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="item-21 item">높은 기대감과 호기심</div>
+          <div class="item-22 item">불안감과 망설임</div>
+          <div class="item-23 item">핵심 만족감 / 해방감</div>
+          <div class="item-24 item">재미와 유용성에 대한 만족</div>
+          <div class="item-25 item">죄책감과 좌절감 (이탈 위기)</div>
+          <div class="item-26 item row-heading">페인 포인트</div>
+          <div class="item-27 item">기존 앱의 수동 입력 방식에 대한 거부감과 재미가 없으면 포기할 것이라는 선입견.</div>
+          <div class="item-28 item">내 카드 정보가 유출될까?' 하는 잠재적인 불안감.</div>
+          <div class="item-29 item">결제했는데 기록이 안 되어 있을 때의 실망감.</div>
+          <div class="item-30 item">분석 리포트의 디자인이 딱딱하고 재미없으면 다시 안 볼 것 같음.</div>
+          <div class="item-31 item">스트레스성 충동 소비 후 죄책감으로 인해 앱을 삭제하고 싶은 심리 (이탈 직전).</div>
+          <div class="item-32 item row-heading">기회 요소</div>
+          <div class="item-33 item">'단 10초 만에 기록 완료'를 강조한 바이럴 콘텐츠로 유입을 극대화한다.</div>
+          <div class="item-34 item">카드 연동 시 '데이터 익명화'를 시각적으로 강조하고, 연동 과정에 '게임화' 요소를 적용한다.</div>
+          <div class="item-35 item">결제 5초 이내에 '기록 완료 알림'을 전송하여 고객의 만족감을 극대화한다.</div>
+          <div class="item-36 item">SNS 공유에 최적화된 트렌디한 인포그래픽을 제공하여 자발적 바이럴을 유도한다.</div>
+          <div class="item-37 item">'충동 소비 방지 트리거 알림'으로 이탈을 막고, 정돈된 장기 보고서를 통해 유료 구독을 제안한다.</div>
         </div>
       </div>
     </section>
@@ -574,7 +775,9 @@
           if (AniName === "popin") {
             gsapAni__popIn(el, Duration, delay);
           } else if (AniName === "fade") {
-            gsapAni__fade(el, Duration, delay);
+            const scrub = Number(el.dataset.scrub) || true;
+            console.log(scrub);
+            gsapAni__fade(el, Duration, delay, scrub);
           } else if (AniName === "slideLeft") {
             gsapAni__slideLeft(el, Duration, delay);
           } else if (AniName === "fadeUp") {
@@ -599,11 +802,11 @@
         gaspAni__createST(target, tl, false);
       };
 
-      const gsapAni__fade = (target, duration, delay) => {
+      const gsapAni__fade = (target, duration, delay, scrub) => {
         const tl = gsap.timeline();
         tl.from(target, { delay: delay / 1000 });
         tl.from(target, { opacity: 0, duration: duration / 1000, ease: "none" });
-        gaspAni__createST(target, tl, 1);
+        gaspAni__createST(target, tl, scrub);
       };
 
       const gsapAni__slideLeft = (target, duration, delay) => {
