@@ -959,21 +959,25 @@
         const tl = gsap.timeline();
 
         // 타임라인에 gsap 트윈 메서드를 통해 애니메이션 추가
+        // from : 지정된 스타일에서 css스타일로
+        // to : css스타일에서 지정된 스타일로
+        // fromTo : 지정된 스타일에서 지정된 스타일로
+        // add : 타임라인에 태그 추가
         tl.from(svgItems[1], { opacity: 0 });
         tl.to(textBox, { opacity: 0, y: 100 });
         tl.add("start");
         tl.from(particle, { top: "50%", left: "50%", rotate: 360, scale: 0.75, opacity: 0 }, "start");
         tl.from(pinTarget, { backgroundColor: "#fff" }, "start");
         tl.from(svgItems[0], { opacity: 0, scale: 0.75 }, "start");
-        tl.to(svgItems[1], { y: "-100%" });
+        tl.to(svgItems[1], { y: "-100%" }, "<50%");
 
         // 스크롤 트리거로 애니메이션 발동
         const st = ScrollTrigger.create({
-          trigger: pinTarget,
-          pin: true,
-          end: "+=200%",
-          animation: tl,
-          scrub: 1,
+          trigger: pinTarget, //발동지점 설정
+          pin: true, //화면 고정 설정 불리언값, 혹은 핀하고 싶은 요소
+          end: "+=200%", //스크롤 거리 설정 200vh만큼 스크롤
+          animation: tl, //애니메이션 타임라인 연결
+          scrub: 1, //애니메이션 반응속도 지정, 0은 즉시, 숫자올라갈수록 반응속도 느려짐
         });
       };
       gaspAni__projectGaol();
