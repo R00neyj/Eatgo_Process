@@ -30,6 +30,12 @@ html {
   cursor: pointer;
 } */
 
+.svg-box.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
 /* comp for textbox */
 .heading-text {
   text-align: center;
@@ -111,9 +117,6 @@ body {
     position: absolute;
     top: 24rem;
     left: 42rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
   }
 
   > .img-box {
@@ -1072,5 +1075,84 @@ body {
     > .item-37 {
       grid-area: i37;
     }
+  }
+}
+/* -------------------------------------- sec projectGoal -------------------------------------- */
+.sec-projectGoal {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--MainOrange);
+}
+
+.sec-projectGoal .content-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sec-projectGoal .svg-box.character {
+  width: 41.2rem;
+  left: 50%;
+  top: 120%;
+  transform: translate(-50%, -50%);
+}
+
+.sec-projectGoal .svg-box.logo {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sec-projectGoal .svg-box {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  transform-origin: 50% 50%;
+  color: var(--Mono-100);
+}
+
+.sec-projectGoal .item-1 {
+  top: 27rem;
+  left: 130rem;
+  transform: rotate(-15deg);
+  svg {
+    width: 12.8rem;
+  }
+}
+.sec-projectGoal .item-2 {
+  top: 77rem;
+  left: 150rem;
+  transform: rotate(15deg);
+}
+.sec-projectGoal .item-3 {
+  top: 45rem;
+  left: 25rem;
+  transform: rotate(15deg);
+
+  svg {
+    width: 12.8rem;
+  }
+}
+.sec-projectGoal .item-4 {
+  top: 76rem;
+  left: 41rem;
+  transform: rotate(15deg);
+}
+.sec-projectGoal .item-5 {
+  top: 16rem;
+  left: 51rem;
+  transform: rotate(-15deg);
+
+  svg {
+    width: 16rem;
+  }
+}
+.sec-projectGoal .item-6 {
+  top: 50rem;
+  left: 166.5rem;
+  svg {
+    width: 9.6rem;
   }
 }
