@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/variable.css" />
     <link rel="stylesheet" href="../css/gyu.css" />
     <!-- JS -->
-    <script src="../script/script.js" defer></script>
+    <!-- <script src="../script/script.js" defer></script> -->
   </head>
   <body>
     <main>
@@ -67,25 +67,25 @@
               <span>단순 기록</span>
               <span>심층 분석</span>
             </div>
-            <div class="graph-inside-logo logo-1">
+            <div class="graph-inside-logo logo-1 t1">
               <img src="../image/sec-positioning/logo-box/logo-noom.png" alt="logo-noom" />
             </div>
-            <div class="graph-inside-logo logo-2">
+            <div class="graph-inside-logo logo-2 t2">
               <img src="../image/sec-positioning/logo-box/logo-inout.png" alt="logo-inout" />
             </div>
-            <div class="graph-inside-logo logo-3">
+            <div class="graph-inside-logo logo-3 t3">
               <img src="../image/sec-positioning/logo-box/logo-pasta.png" alt="logo-pasta" />
             </div>
-            <div class="graph-inside-logo logo-4">
+            <div class="graph-inside-logo logo-4 t4">
               <img src="../image/sec-positioning/logo-box/logo-pillyze.png" alt="logo-pillyze" />
             </div>
-            <div class="graph-inside-logo logo-5">
+            <div class="graph-inside-logo logo-5 t5">
               <img src="../image/sec-positioning/logo-box/logo-myfitnesspal.png" alt="logo-myfitnesspal" />
             </div>
-            <div class="graph-inside-logo logo-6">
+            <div class="graph-inside-logo logo-6 t6">
               <img src="../image/sec-positioning/logo-box/logo-mealligram.png" alt="logo-mealligram" />
             </div>
-            <div class="graph-inside-logo logo-7">
+            <div class="graph-inside-logo logo-7 t7">
               <img src="../image/sec-positioning/logo-box/logo-eatgo.png" alt="logo-eatgo" />
             </div>
           </div>
@@ -478,33 +478,51 @@
       </section>
       <section class="sec-character-level-up">
         <div class="character-level-up-container">
-            <div class="top-box">
-                <span class="title-box">Character Level-up</span>
-                <h3>식단을 꾸준히 지키면 캐릭터가 함께 성장해요</h3>
-                <span>게임처럼 보상 구조를 통해 식습관을 유지하기 쉬워져요</span>
+          <div class="top-box">
+            <span class="title-box">Character Level-up</span>
+            <h3>식단을 꾸준히 지키면 캐릭터가 함께 성장해요</h3>
+            <span>게임처럼 보상 구조를 통해 식습관을 유지하기 쉬워져요</span>
+          </div>
+          <div class="bottom-box">
+            <div class="img-container img-container-1">
+              <img src="../image/sec-character-level-up/bappuri-level-1.png" alt="bappuri-level-1" />
             </div>
-            <div class="bottom-box">
-                <div class="img-container img-container-1">
-                    <img src="../image/sec-character-level-up/bappuri-level-1.png" alt="bappuri-level-1">
-                </div>
-                <div class="img-container img-container-2">
-                    <img src="../image/sections/Arrow.png" alt="Arrow">
-                </div>
-                <div class="img-container img-container-3">
-                    <img src="../image/sec-character-level-up/bappuri-level-2.png" alt="bappuri-level-2">
-                </div>
-                <div class="img-container img-container-4">
-                    <img src="../image/sections/Arrow.png" alt="Arrow">
-                </div>
-                <div class="img-container img-container-5">
-                    <img src="../image/sec-character-level-up/bappuri-level-3.png" alt="bappuri-level-3">
-                </div>
+            <div class="img-container img-container-2">
+              <img src="../image/sections/Arrow.png" alt="Arrow" />
             </div>
+            <div class="img-container img-container-3">
+              <img src="../image/sec-character-level-up/bappuri-level-2.png" alt="bappuri-level-2" />
+            </div>
+            <div class="img-container img-container-4">
+              <img src="../image/sections/Arrow.png" alt="Arrow" />
+            </div>
+            <div class="img-container img-container-5">
+              <img src="../image/sec-character-level-up/bappuri-level-3.png" alt="bappuri-level-3" />
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script>
-      console.clear();
+      // console.clear();
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      // GSAP scrollTrigger ------------------------------ //
+      function scrollTrigger__init() {
+        const pinStart = document.querySelector(".sec-positioning");
+        const circles = pinStart.querySelectorAll(".graph-inside-logo");
+
+        console.log(circles);
+
+        const tl = gsap.timeline();
+        tl.from(circles, { top: "50%", left: "50%", translate: "0% 0%", opacity: 0, duration: 1, ease: "bounce.out", stagger: 0.05 });
+      }
+
+      scrollTrigger__init();
     </script>
   </body>
 </html>
