@@ -293,13 +293,14 @@ html {
 }
 .sec-gui-character-title-screen-box .sec-gui-character-title-screen-list .character-step-box {
   background-color: var(--MainOrange);
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   padding: 0.5rem 1rem;
 }
-.sec-gui-character-title-screen-box .sec-gui-character-title-screen-list .character-step-box > p {
+.sec-gui-character-title-screen-box .sec-gui-character-title-screen-list .character-step-box span {
   color: var(--Mono-97);
   font-size: var(--Body-M);
-  font-weight: 700;
+  font-weight: var(--BodyStrong);
+  line-height: 1.8;
   text-align: center;
 }
 .sec-gui-character-title-screen-box .sec-gui-character-title-screen-list .sec-gui-character-title-screen-text-box {
@@ -375,20 +376,20 @@ html {
 }
 .sec-gui-list-report .sec-gui-list-report-background-img-box {
   position: absolute;
-  bottom: 0;
+  top: 63.2rem;
   right: 0;
   width: 49.1rem;
 }
 .sec-gui-list-report .sec-gui-list-report-grid {
   max-width: var(--maxWidth);
   margin: 0 auto;
-  padding-left: 28.2rem;
-  padding-bottom: 17rem;
 }
 .sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box {
   display: flex;
   gap: 2rem;
   position: relative;
+  padding-left: 28.2rem;
+  padding-bottom: 17rem;
 }
 .sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .sec-gui-list-report-title-text-box {
   display: flex;
@@ -415,7 +416,7 @@ html {
 .sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .arrow-box {
   position: absolute;
   top: 48.3rem;
-  left: 34%;
+  left: 46%;
   translate: -50% -50%;
 }
 .sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .absolute-text-box {
@@ -424,7 +425,7 @@ html {
   gap: 1.2rem;
   position: absolute;
   top: 48.3rem;
-  left: 54%;
+  left: 63%;
   translate: -50% -50%;
 }
 .sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .absolute-text-box .step-box {
@@ -433,11 +434,12 @@ html {
   padding: 0.5rem 1rem;
   width: fit-content;
 }
-.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .absolute-text-box .step-box > p {
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .absolute-text-box .step-box > span {
   color: var(--Mono-97);
   font-size: var(--Body-M);
   font-weight: 700;
   text-align: center;
+  line-height: 1.8;
 }
 .sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .absolute-text-box > p {
   color: var(--Mono-30);
@@ -452,6 +454,86 @@ html {
   width: 39.591rem;
 }
 
+/* 리스트&리포트 타이틀 끝 */
+
+/* 리스트&리포트 스크린 시작 */
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box {
+  display: flex;
+  gap: 2rem;
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  flex: 1;
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box > .number-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--MainOrange);
+  border-radius: 0.4rem;
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box > .number-box > span {
+  color: var(--Mono-100);
+  font-size: var(--Body-M);
+  font-weight: var(--subHeading);
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box > p {
+  color: var(--Mono-30);
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+}
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-list-img-box {
+  width: 39.5rem;
+}
+.sec-gui-list-report-screen-list-text-box .step-box {
+  background-color: var(--MainOrange);
+  border-radius: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+.sec-gui-list-report-screen-list-text-box .step-box > span {
+  color: var(--Mono-97);
+  font-size: var(--Body-M);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.8;
+}
+.sec-gui-list-report-screen-list-text-box > p {
+  color: var(--Mono-30);
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+  line-height: 1.8;
+}
+.sec-gui-list-report-screen-list-2 {
+  position: relative;
+}
+.sec-gui-list-report-screen-list-text-box-1,
+.sec-gui-list-report-screen-list-text-box-2,
+.sec-gui-list-report-screen-list-text-box-3,
+.sec-gui-list-report-screen-list-text-box-4 {
+  flex-direction: column;
+  justify-content: start !important;
+  align-items: start !important;
+}
+.sec-gui-list-report-screen-list-text-box-3 {
+  position: absolute;
+  top: 89.8rem;
+  left: 5.3rem;
+}
+.sec-gui-list-report-screen-list-2 .arrow-box {
+  position: absolute;
+  top: 89.8rem;
+  left: 2.3rem;
+}
 /* 풋터 시작 */
 
 footer {
