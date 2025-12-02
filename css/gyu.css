@@ -138,18 +138,18 @@ main {
 .sec-positioning > .positioning-container > .right-box {
   position: relative;
   flex: 1.5 0 0;
-  min-width: 96rem;
-  width: 100%;
+  width: 96rem;
   height: 80rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-sizing: border-box;
   background-color: var(--Mono-97);
   border-radius: 2.4rem;
 }
 
 .sec-positioning > .positioning-container > .right-box > .img-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 73rem;
   height: 73rem;
   overflow: hidden;
@@ -164,8 +164,9 @@ main {
 /* right-box > graph-axis ------------------------------------ */
 .sec-positioning > .positioning-container > .right-box > .graph-axis-X {
   position: absolute;
-  top: 0;
-  transform: translateY(2850%);
+  bottom: 0;
+  left: 0;
+  transform: translate(18.5%, -35%);
   width: 70rem;
   display: flex;
   align-items: center;
@@ -176,8 +177,9 @@ main {
 
 .sec-positioning > .positioning-container > .right-box > .graph-axis-Y {
   position: absolute;
+  top: 0;
   left: 0;
-  transform: translateX(50%);
+  transform: translate(55%, 7%);
   height: 70rem;
   display: flex;
   flex-direction: column;
@@ -196,7 +198,7 @@ main {
   border-radius: 50%;
   background-color: var(--Mono-100);
   filter: saturate(0);
-  transition: all 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
 }
 
 .sec-positioning > .positioning-container > .right-box .graph-inside-logo:hover {
@@ -215,7 +217,7 @@ main {
 .sec-positioning > .positioning-container > .right-box > .logo-1 {
   top: 0;
   left: 0;
-  translate: 150% 50%;
+  translate: 135% 50%;
 }
 
 .sec-positioning > .positioning-container > .right-box > .logo-2 {
@@ -239,13 +241,13 @@ main {
 .sec-positioning > .positioning-container > .right-box > .logo-5 {
   top: 0;
   left: 0;
-  translate: 150% 625%;
+  translate: 135% 640%;
 }
 
 .sec-positioning > .positioning-container > .right-box > .logo-6 {
   top: 0;
   left: 0;
-  translate: 510% 420%;
+  translate: 510% 430%;
 }
 
 .sec-positioning > .positioning-container > .right-box > .logo-7 {
@@ -253,7 +255,7 @@ main {
   height: 15.5rem;
   top: 0;
   left: 0;
-  translate: 500% 210%;
+  translate: 500% 205%;
   filter: saturate(1);
 }
 /* sec-flowChart ------------------------------------ */
@@ -1150,7 +1152,7 @@ main {
 
 .sec-character-normal > .character-normal-container > .text-box > .paragraph-wrapper > p {
   color: var(--Mono-30);
-  font-size: var(--Body-M);
+  font-size: var(--Body-L);
   font-weight: var(--Body);
   line-height: 180%;
 }
@@ -1224,7 +1226,7 @@ main {
 
 .sec-character-vary > .character-vary-container > .text-box {
   color: var(--Mono-100);
-  font-size: var(--Body-M);
+  font-size: var(--Body-L);
   font-weight: var(--Body);
 }
 /* sec-character-level-up ------------------------------------ */
