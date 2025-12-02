@@ -460,6 +460,7 @@ html {
 .sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box {
   display: flex;
   gap: 2rem;
+  padding-bottom: 14.4rem;
 }
 .sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list {
   display: flex;
@@ -469,11 +470,18 @@ html {
 }
 .sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.2rem;
+}
+.sec-gui-list-report-screen-list-text-box-alt {
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
-.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box > .number-box {
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box-alt > .number-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -482,12 +490,13 @@ html {
   background-color: var(--MainOrange);
   border-radius: 0.4rem;
 }
-.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box > .number-box > span {
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box-alt > .number-box > span {
   color: var(--Mono-100);
   font-size: var(--Body-M);
   font-weight: var(--subHeading);
 }
-.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box > p {
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box,
+.sec-gui-list-report-screen-list-text-box-alt > p {
   color: var(--Mono-30);
   font-size: var(--Body-M);
   font-weight: var(--Body);
@@ -513,27 +522,315 @@ html {
   font-weight: var(--Body);
   line-height: 1.8;
 }
+
 .sec-gui-list-report-screen-list-2 {
   position: relative;
 }
-.sec-gui-list-report-screen-list-text-box-1,
-.sec-gui-list-report-screen-list-text-box-2,
-.sec-gui-list-report-screen-list-text-box-3,
-.sec-gui-list-report-screen-list-text-box-4 {
-  flex-direction: column;
-  justify-content: start !important;
-  align-items: start !important;
+.sec-gui-list-report-screen-list-text-box-1 {
+  position: absolute;
+  top: 33rem;
+  left: 0;
+}
+.sec-gui-list-report-screen-list-text-box-2 {
+  position: absolute;
+  top: 65.4rem;
+  left: 0;
 }
 .sec-gui-list-report-screen-list-text-box-3 {
   position: absolute;
   top: 89.8rem;
-  left: 5.3rem;
+  left: 13.5rem;
 }
 .sec-gui-list-report-screen-list-2 .arrow-box {
   position: absolute;
   top: 89.8rem;
   left: 2.3rem;
 }
+.sec-gui-list-report-screen-list-4 {
+  position: relative;
+}
+.sec-gui-list-report-screen-list-4 .arrow-box {
+  position: absolute;
+  bottom: 6rem;
+  left: 1rem;
+}
+.sec-gui-list-report-screen-list-text-box-4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* 리스트&리포트 끝 */
+
+/* 리스트&리포트-2 시작 */
+.sec-gui-list-report-screen-2-box {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 10rem;
+}
+.sec-gui-list-report-screen-2-box .screen-2-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.sec-gui-list-report-screen-2-box .text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.sec-gui-list-report-screen-2-box .text-box > p {
+  color: var(--Mono-30);
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+}
+.sec-gui-list-report-screen-2-box .number-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--MainOrange);
+  border-radius: 0.4rem;
+}
+.sec-gui-list-report-screen-2-box .number-box > span {
+  color: var(--Mono-100);
+  font-size: var(--Body-M);
+  font-weight: var(--subHeading);
+}
+.sec-gui-list-report-screen-2-box .img-box > img {
+  width: 39.47rem;
+}
+
+/* 리스트&리포트-2 끝 */
+
+/* 코치 시작 */
+
+.sec-gui-coach {
+  position: relative;
+  background-color: var(--Mono-15);
+  overflow-x: hidden;
+  padding-top: 10rem;
+  padding-bottom: 20rem;
+}
+.sec-gui-coach p,
+span {
+  color: var(--Mono-100);
+}
+.sec-gui-coach .abs-number-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0.1rem solid var(--Mono-100);
+  border-radius: 0.4rem;
+}
+.sec-gui-coach .abs-number-box > span {
+  font-size: var(--Body-M);
+  font-weight: 400;
+}
+.sec-gui-coach .number-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: var(--MainOrange);
+  border-radius: 0.4rem;
+}
+.sec-gui-coach .number-box > span {
+  color: var(--Mono-100);
+  font-size: var(--Body-M);
+  font-weight: var(--subHeading);
+}
+.sec-gui-coach .background-img-box {
+  position: absolute;
+  top: 19.5rem;
+  right: 17.8rem;
+  width: 42.128rem;
+}
+.sec-gui-coach .sec-gui-coach-grid {
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+.sec-gui-coach .title-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding-bottom: 8rem;
+}
+.sec-gui-coach .title-box > p:nth-child(1) {
+  color: var(--MainOrange);
+  font-weight: var(--BodyStrong);
+  font-size: var(--Heading-S);
+  line-height: 1.5;
+}
+.sec-gui-coach .title-box > p:nth-child(2) {
+  color: var(--Mono-100);
+  font-weight: var(--Heading);
+  font-size: var(--Heading-M);
+  line-height: 1.5;
+}
+.sec-gui-coach .title-box > p:nth-child(3) {
+  color: var(--Mono-100);
+  font-weight: var(--Body);
+  font-size: var(--subHeading-M);
+  line-height: 1.8;
+}
+.sec-gui-coach .screen-box-1 {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 14.4rem;
+}
+.sec-gui-coach .screen-list {
+  flex: 1;
+}
+.sec-gui-coach .screen-list-flow {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 1.2rem;
+}
+.sec-gui-coach .screen-list-flow .text-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.sec-gui-coach .screen-list-flow .text-box > p {
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+}
+.sec-gui-coach .screen-list-abs-1 {
+  position: relative;
+}
+.sec-gui-coach .screen-list-abs-1 .text-box-1 {
+  position: absolute;
+  left: 0;
+  top: 25.5rem;
+}
+.sec-gui-coach .screen-list-abs-1 .text-box-2 {
+  position: absolute;
+  left: 0;
+  top: 68.7rem;
+}
+.sec-gui-coach .screen-list-abs-1 .text-box-3 {
+  position: absolute;
+  left: 0;
+  top: 135.9rem;
+}
+.sec-gui-coach .screen-list-abs-2 {
+  position: relative;
+}
+.sec-gui-coach .screen-list-abs-2 .text-box {
+  position: absolute;
+  left: 0;
+  top: 104.6rem;
+}
+.sec-gui-coach .screen-list-abs .text-box > p {
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+  line-height: 1.8;
+}
+.sec-gui-coach .screen-list .img-box {
+  width: 39.5rem;
+}
+
+.sec-gui-coach .screen-box-2 {
+  display: flex;
+  gap: 2rem;
+}
+.sec-gui-coach .screen-2-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  flex: 1;
+}
+.sec-gui-coach .screen-2-list .text-box {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.sec-gui-coach .screen-2-list-flow,
+.screen-2-list-abs-2 .text-box > p {
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+}
+.sec-gui-coach .screen-2-list-abs-1 {
+  position: relative;
+}
+.sec-gui-coach .screen-2-list-abs-1 .text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1.2rem;
+  position: absolute;
+  top: 28.4rem;
+  left: 0;
+}
+.sec-gui-coach .screen-2-list-abs-1 .text-box > p {
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+  line-height: 1.8;
+}
+.sec-gui-coach .screen-2-list-abs-2 {
+  position: relative;
+}
+.sec-gui-coach .screen-2-list-abs-2 .text-box-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 37.1rem;
+}
+.sec-gui-coach .screen-2-list-abs-2 .text-box-2 > p {
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+  line-height: 1.8;
+}
+.sec-gui-coach .screen-2-list-abs-2 .text-box-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 5.5rem;
+}
+.sec-gui-coach .screen-2-list-abs-2 .text-box-3 > p {
+  font-size: var(--Body-M);
+  font-weight: var(--Body);
+  line-height: 1.8;
+}
+.sec-gui-coach .screen-2-list-abs-2 .arrow-box-1 {
+  position: absolute;
+  right: 3rem;
+  bottom: 39.7rem;
+}
+.sec-gui-coach .screen-2-list-abs-2 .arrow-box-2 {
+  position: absolute;
+  right: 3rem;
+  bottom: 7.2rem;
+}
+.sec-gui-coach .screen-2-list .img-box {
+  width: 39.5rem;
+}
+/* 코치 끝 */
 /* 풋터 시작 */
 
 footer {
