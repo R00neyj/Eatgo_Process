@@ -6,6 +6,7 @@ html {
 .sec-gui-Onboarding-intro {
   position: relative;
   background-color: var(--Mono-100);
+  padding-top: 10rem;
   padding-bottom: 14.4rem;
 }
 .sec-gui-Onboarding-intro-grid {
