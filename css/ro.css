@@ -22,6 +22,10 @@ html {
   gap: 2rem;
   padding-bottom: 8rem;
   width: 100%;
+
+  span {
+    display: inline-block;
+  }
 }
 .sec-gui-Onboarding-intro-grid > .title-text-box > p:first-child {
   color: var(--MainOrange);
@@ -41,7 +45,7 @@ html {
 .sec-gui-Onboarding-intro-grid > .onboarding-background-img-box {
   position: absolute;
   bottom: 5%;
-  right: 0;
+  right: 7%;
 }
 
 /* 온보딩 인트로 끝 */
@@ -164,6 +168,9 @@ html {
   top: 30rem;
   left: 50%;
   translate: -50% -50%;
+  span {
+    display: inline-block;
+  }
 }
 .sec-gui-home > .sec-gui-home-grid > .sec-gui-home-text-box > p:first-child {
   color: var(--MainOrange);
@@ -398,6 +405,10 @@ html {
   gap: 2rem;
   padding-top: 10rem;
   padding-left: 6.6rem;
+
+  span {
+    display: inline-block;
+  }
 }
 .sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-title-box .sec-gui-list-report-title-text-box > p:first-child {
   color: var(--MainOrange);
@@ -482,7 +493,12 @@ html {
   justify-content: center;
   gap: 1rem;
 }
-.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box-alt > .number-box {
+.sec-gui-list-report
+  .sec-gui-list-report-grid
+  .sec-gui-list-report-screen-box
+  .sec-gui-list-report-screen-list
+  .sec-gui-list-report-screen-list-text-box-alt
+  > .number-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -491,7 +507,13 @@ html {
   background-color: var(--MainOrange);
   border-radius: 0.4rem;
 }
-.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box-alt > .number-box > span {
+.sec-gui-list-report
+  .sec-gui-list-report-grid
+  .sec-gui-list-report-screen-box
+  .sec-gui-list-report-screen-list
+  .sec-gui-list-report-screen-list-text-box-alt
+  > .number-box
+  > span {
   color: var(--Mono-100);
   font-size: var(--Body-M);
   font-weight: var(--subHeading);
@@ -616,7 +638,7 @@ html {
   padding-bottom: 20rem;
 }
 .sec-gui-coach p,
-span {
+.sec-gui-coach span {
   color: var(--Mono-100);
 }
 .sec-gui-coach .abs-number-box {
@@ -667,7 +689,8 @@ span {
   gap: 2rem;
   padding-bottom: 8rem;
 }
-.sec-gui-coach .title-box > p:nth-child(1) {
+.sec-gui-coach .title-box > p:nth-child(1) > span {
+  display: inline-block;
   color: var(--MainOrange);
   font-weight: var(--BodyStrong);
   font-size: var(--Heading-S);

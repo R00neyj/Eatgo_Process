@@ -433,7 +433,7 @@ main {
   align-items: center;
   gap: 2rem;
   height: 50rem;
-  background-color: var(--MainOrangeB);
+  background-color: var(--MainOrange3);
   border-radius: 0 999rem 999rem 0;
 }
 
@@ -537,7 +537,7 @@ main {
   align-items: center;
   height: 57.4rem;
   gap: 2rem;
-  background-color: var(--MainOrangeB);
+  background-color: var(--MainOrange3);
   border-radius: 999rem 0 0 999rem;
   padding-left: 8.6rem;
 }
@@ -586,7 +586,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--MainOrangeB);
+  background-color: var(--MainOrange3);
 }
 
 .sec-appIcon > .appIcon-container > .right-box > .img-container {
