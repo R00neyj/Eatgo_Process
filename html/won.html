@@ -1044,7 +1044,7 @@
         const particle = Array.from(svgItems);
         particle.splice(0, 2);
 
-        console.log(svgItems);
+        console.log(particle);
 
         // 여러 요소들 애니메이션 관리를 위해 gsap 타임라인 생성
         const tl = gsap.timeline();
@@ -1057,7 +1057,7 @@
         tl.from(svgItems[1], { opacity: 0 });
         tl.to(textBox, { opacity: 0, y: 100 });
         tl.add("start");
-        tl.from(particle, { top: "50%", left: "50%", rotate: 360, scale: 0.75, opacity: 0 }, "start");
+        tl.from(particle, { top: "50%", left: "50%", rotate: 360, scale: 0.75, opacity: 0, stagger: 0.04 }, "start");
         tl.from(pinTarget, { backgroundColor: "#fff" }, "start");
         tl.from(svgItems[0], { opacity: 0, scale: 0.75 }, "start");
         tl.to(svgItems[1], { y: "-100%" }, "<50%");
