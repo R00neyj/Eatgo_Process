@@ -493,12 +493,7 @@ html {
   justify-content: center;
   gap: 1rem;
 }
-.sec-gui-list-report
-  .sec-gui-list-report-grid
-  .sec-gui-list-report-screen-box
-  .sec-gui-list-report-screen-list
-  .sec-gui-list-report-screen-list-text-box-alt
-  > .number-box {
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box-alt > .number-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -507,13 +502,7 @@ html {
   background-color: var(--MainOrange);
   border-radius: 0.4rem;
 }
-.sec-gui-list-report
-  .sec-gui-list-report-grid
-  .sec-gui-list-report-screen-box
-  .sec-gui-list-report-screen-list
-  .sec-gui-list-report-screen-list-text-box-alt
-  > .number-box
-  > span {
+.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box-alt > .number-box > span {
   color: var(--Mono-100);
   font-size: var(--Body-M);
   font-weight: var(--subHeading);
@@ -566,8 +555,9 @@ html {
 }
 .sec-gui-list-report-screen-list-2 .arrow-box {
   position: absolute;
-  top: 89.8rem;
+  top: 92.8rem;
   left: 2.3rem;
+  transform: rotate(180deg);
 }
 .sec-gui-list-report-screen-list-4 {
   position: relative;
@@ -575,7 +565,8 @@ html {
 .sec-gui-list-report-screen-list-4 .arrow-box {
   position: absolute;
   bottom: 6rem;
-  left: 1rem;
+  left: 2rem;
+  transform: rotate(180deg);
 }
 .sec-gui-list-report-screen-list-text-box-4 {
   position: absolute;

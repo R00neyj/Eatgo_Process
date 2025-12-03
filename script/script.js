@@ -6,6 +6,7 @@ const gsapAni__init = () => {
       [data-gsap="popin"],
       [data-gsap="slideLeft"],
       [data-gsap="slideRight"],
+      [data-gsap="slideUp"],
       [data-gsap="counter"],
       [data-gsap="curtain"],
       [data-gsap="fadeUp"]`);
@@ -17,6 +18,9 @@ const gsapAni__init = () => {
   gaspAni__jourenyMap();
   gaspAni__projectGaol();
   gsapAni__character__init();
+
+  gsapAni__graph(".mask-circle-1", ".sec-survey .box-1");
+  gsapAni__graph(".mask-circle-2", ".sec-survey .box-2");
   const Duration = 600;
 
   AniTarget.forEach((el) => {
@@ -35,6 +39,8 @@ const gsapAni__init = () => {
       gsapAni__slideLeft(el, Duration, delay);
     } else if (AniName === "slideRight") {
       gsapAni__slideRight(el, Duration, delay);
+    } else if (AniName === "slideUp") {
+      gsapAni__slideUp(el, Duration, delay, scrub);
     } else if (AniName === "fadeUp") {
       gsapAni__fadeUp(el, Duration, delay);
     } else if (AniName === "counter") {
@@ -82,6 +88,13 @@ const gsapAni__slideRight = (target, duration, delay) => {
   tl.from(target, { delay: delay / 1000 });
   tl.from(target, { opacity: 0, x: "25%", duration: duration / 1000, ease: "none" });
   gaspAni__createST(target, tl, 1);
+};
+
+const gsapAni__slideUp = (target, duration, delay, isScrub) => {
+  const tl = gsap.timeline();
+  tl.from(target, { delay: delay / 1000 });
+  tl.from(target, { y: "50%", duration: duration / 1000, ease: "power1.out" });
+  gaspAni__createST(target, tl, isScrub);
 };
 
 const gsapAni__counter = (target, duration, delay) => {
@@ -233,6 +246,7 @@ function scrollTrigger__init() {
   ScrollTrigger.create({
     trigger: pinStart,
     animation: tl,
+    start: "top center",
     toggleActions: "play none none reverse",
   });
 }
@@ -302,10 +316,7 @@ const gsapAni__character__init = () => {
 
   const tlLevelUp = gsap.timeline();
   gsap.set(imgContainers, { transformOrigin: "50% 50%" });
-  tlLevelUp
-    .from(imgContainers, { opacity: 0, scale: 0.75, ease: "none", stagger: 0.1 })
-    .to(imgContainers, { scale: 1.05, ease: "none", stagger: 0.1 }, "<50%")
-    .to(imgContainers, { scale: 1, ease: "none", stagger: 0.1 });
+  tlLevelUp.from(imgContainers, { opacity: 0, scale: 0.75, ease: "none", stagger: 0.1 }).to(imgContainers, { scale: 1.05, ease: "none", stagger: 0.1 }, "<50%").to(imgContainers, { scale: 1, ease: "none", stagger: 0.1 });
 
   const stLevelUp = ScrollTrigger.create({
     trigger: chLevelUp,
@@ -320,11 +331,30 @@ const gsapAni__character__init = () => {
   gsapAni__characterST(characterEl3, tl3);
 };
 
+const gsapAni__graph = (target, startPoint) => {
+  const maskCircle = document.querySelector(target);
+
+  const r = 82.5;
+  const circumference = 2 * Math.PI * r;
+
+  gsap.set(maskCircle, {
+    strokeDasharray: circumference,
+    strokeDashoffset: circumference,
+  });
+
+  gsap.to(maskCircle, {
+    strokeDashoffset: 0,
+    ease: "none",
+    scrollTrigger: {
+      trigger: startPoint,
+      start: "top center",
+      end: "+=30%",
+      scrub: 1,
+    },
+  });
+};
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init();
-  gsapAni__init();
-  scrollTrigger__init();
-  tooltip();
 
   // Initialize a new Lenis instance for smooth scrolling
   const lenis = new Lenis();
@@ -340,4 +370,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Disable lag smoothing in GSAP to prevent any delay in scroll animations
   gsap.ticker.lagSmoothing(0);
+
+  gsapAni__init();
+  scrollTrigger__init();
+  tooltip();
 });

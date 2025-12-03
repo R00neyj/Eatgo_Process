@@ -258,6 +258,7 @@ body {
       align-items: end;
       justify-content: center;
       gap: 3.2rem;
+      overflow: hidden;
 
       /* graph */
       .graph-1,
@@ -868,11 +869,6 @@ body {
     font-weight: 600;
     color: var(--Mono-30);
     text-align: center;
-    transition: background-color 0.2s;
-
-    &:hover {
-      background-color: var(--Mono-97);
-    }
   }
 }
 /* -------------------------------------- sec journeyMap -------------------------------------- */
@@ -1179,4 +1175,15 @@ body {
 .tooltip-box.active {
   opacity: 1;
   visibility: visible;
+}
+
+.sec-lastOne {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0 0 0 0;
+    background: linear-gradient(to bottom, transparent 70%, var(--MainOrange));
+  }
 }
