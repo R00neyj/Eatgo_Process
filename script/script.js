@@ -311,7 +311,6 @@ const gsapAni__character__init = () => {
 
   gsapAni__characterST(character1, tl1);
   gsapAni__characterST(character2, tl2);
-  gsapAni__characterST(characterEl3, tl3);
 };
 
 document.addEventListener("DOMContentLoaded", () => {
