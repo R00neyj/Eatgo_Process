@@ -229,6 +229,12 @@ function scrollTrigger__init() {
 
   const tl = gsap.timeline();
   tl.from(circles, { top: "50%", left: "50%", translate: "0% 0%", opacity: 0, duration: 1, ease: "bounce.out", stagger: 0.05 });
+
+  ScrollTrigger.create({
+    trigger: pinStart,
+    animation: tl,
+    toggleActions: "play none none reverse",
+  });
 }
 
 function tooltip() {
