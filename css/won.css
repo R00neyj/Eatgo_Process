@@ -563,7 +563,7 @@ body {
 }
 
 .sec-survey .heading-text-2 {
-  margin: 14rem 0;
+  margin: 24rem 0 14rem;
   > .hg {
     font-size: var(--Heading-L);
   }
