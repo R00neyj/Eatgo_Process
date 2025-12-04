@@ -264,11 +264,13 @@ html {
   color: var(--MainOrange);
   font-weight: var(--BodyStrong);
   font-size: var(--Heading-S);
+  margin-bottom: 2rem;
 }
 .sec-gui-character-grid > .sec-gui-character-title-box > .title-text-box > p:nth-child(3) {
   color: var(--Mono-22);
   font-weight: var(--Heading);
   font-size: var(--Heading-M);
+  margin-bottom: 2rem;
 }
 .sec-gui-character-grid > .sec-gui-character-title-box > .title-text-box > p:nth-child(4) {
   color: var(--Mono-30);
