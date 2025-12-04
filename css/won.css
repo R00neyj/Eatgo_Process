@@ -1184,6 +1184,6 @@ body {
     display: block;
     position: absolute;
     inset: 0 0 0 0;
-    background: linear-gradient(to bottom, transparent 70%, var(--MainOrange));
+    background: linear-gradient(to bottom, var(--Mono-15), transparent 40%, transparent 60%, var(--MainOrange));
   }
 }

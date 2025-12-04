@@ -214,6 +214,11 @@ html {
   height: 2.4rem;
   background-color: var(--MainOrange);
   border-radius: 0.4rem;
+
+  &.box-alt {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 }
 .sec-gui-home-grid .sec-gui-home-list-box .sec-gui-home-list .sec-gui-home-list-text-box .number-box > span {
   color: var(--Mono-100);
@@ -360,6 +365,11 @@ html {
   height: 2.4rem;
   background-color: var(--MainOrange);
   border-radius: 0.4rem;
+
+  &.box-alt {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 }
 .sec-gui-character-title-screen-box-2 .sec-gui-character-screen-list > .sec-gui-character-screen-list-text-box > .number-box > span {
   color: var(--Mono-100);
@@ -493,7 +503,12 @@ html {
   justify-content: center;
   gap: 1rem;
 }
-.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box-alt > .number-box {
+.sec-gui-list-report
+  .sec-gui-list-report-grid
+  .sec-gui-list-report-screen-box
+  .sec-gui-list-report-screen-list
+  .sec-gui-list-report-screen-list-text-box-alt
+  > .number-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -501,8 +516,19 @@ html {
   height: 2.4rem;
   background-color: var(--MainOrange);
   border-radius: 0.4rem;
+
+  &.box-alt {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 }
-.sec-gui-list-report .sec-gui-list-report-grid .sec-gui-list-report-screen-box .sec-gui-list-report-screen-list .sec-gui-list-report-screen-list-text-box-alt > .number-box > span {
+.sec-gui-list-report
+  .sec-gui-list-report-grid
+  .sec-gui-list-report-screen-box
+  .sec-gui-list-report-screen-list
+  .sec-gui-list-report-screen-list-text-box-alt
+  > .number-box
+  > span {
   color: var(--Mono-100);
   font-size: var(--Body-M);
   font-weight: var(--subHeading);
@@ -607,6 +633,11 @@ html {
   height: 2.4rem;
   background-color: var(--MainOrange);
   border-radius: 0.4rem;
+
+  &.box-alt {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 }
 .sec-gui-list-report-screen-2-box .number-box > span {
   color: var(--Mono-100);
@@ -641,6 +672,11 @@ html {
   height: 2.4rem;
   border: 0.1rem solid var(--Mono-100);
   border-radius: 0.4rem;
+
+  &.box-alt {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 }
 .sec-gui-coach .abs-number-box > span {
   font-size: var(--Body-M);
@@ -655,6 +691,11 @@ html {
   height: 2.4rem;
   background-color: var(--MainOrange);
   border-radius: 0.4rem;
+
+  &.box-alt {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
 }
 .sec-gui-coach .number-box > span {
   color: var(--Mono-100);

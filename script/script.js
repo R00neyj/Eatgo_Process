@@ -93,7 +93,7 @@ const gsapAni__slideRight = (target, duration, delay) => {
 const gsapAni__slideUp = (target, duration, delay, isScrub) => {
   const tl = gsap.timeline();
   tl.from(target, { delay: delay / 1000 });
-  tl.from(target, { y: "50%", duration: duration / 1000, ease: "power1.out" });
+  tl.from(target, { y: "50%", opacity: 0, duration: duration / 1000, ease: "power1.out" });
   gaspAni__createST(target, tl, isScrub);
 };
 
@@ -316,7 +316,10 @@ const gsapAni__character__init = () => {
 
   const tlLevelUp = gsap.timeline();
   gsap.set(imgContainers, { transformOrigin: "50% 50%" });
-  tlLevelUp.from(imgContainers, { opacity: 0, scale: 0.75, ease: "none", stagger: 0.1 }).to(imgContainers, { scale: 1.05, ease: "none", stagger: 0.1 }, "<50%").to(imgContainers, { scale: 1, ease: "none", stagger: 0.1 });
+  tlLevelUp
+    .from(imgContainers, { opacity: 0, scale: 0.75, ease: "none", stagger: 0.1 })
+    .to(imgContainers, { scale: 1.05, ease: "none", stagger: 0.1 }, "<50%")
+    .to(imgContainers, { scale: 1, ease: "none", stagger: 0.1 });
 
   const stLevelUp = ScrollTrigger.create({
     trigger: chLevelUp,
